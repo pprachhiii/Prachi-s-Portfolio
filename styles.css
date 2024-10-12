@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 600;
+    margin: 0;
+}
+
+h1 .highlight {
+    color: #00A7E1;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #00A7E1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Responsive container */
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 600;
+}
+
+.toggle-theme {
+    background-color: #00A7E1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F0F8FF;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    background-color: #00A7E1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #008BB0;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skill-wheels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Responsive wrap */
+    margin-top: 30px;
+}
+
+.skill {
+    width: 120px; /* Adjusted size */
+    height: 120px; /* Adjusted size */
+    position: relative;
+    margin: 10px; /* Spacing between wheels */
+}
+
+.skill canvas {
+    max-width: 100%;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #F8F9FA;
+    padding: 50px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-link {
+    color: #00A7E1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #00A7E1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F0F8FF;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .skill {
+        width: 100px; /* Smaller wheels on mobile */
+        height: 100px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+}
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .header {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .navbar a {
+    color: #ffffff;
+}
+
+.dark-theme .btn-primary {
+    background-color: #BB86FC;
+}
+
+.dark-theme .hero {
+    background-color: #1c1c1c;
+}
+
+.dark-theme .about,
+.dark-theme .skills,
+.dark-theme .projects,
+.dark-theme .contact,
+.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.dark-theme .project-card {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.dark-theme .contact-form button {
+    background-color: #BB86FC;
+}
+
+.dark-theme .social-links a {
+    color: #BB86FC;
+}
