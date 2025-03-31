@@ -20,24 +20,6 @@ const createSkillWheel = (id, percentage) => {
     });
 };
 
-// Theme toggle functionality
-const themeToggleBtn = document.querySelector('.toggle-theme');
-const body = document.body;
-
-// Check for saved user preference and apply it
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    body.classList.toggle('dark-theme', savedTheme === 'dark');
-    themeToggleBtn.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
-}
-
-// Event listener for the theme toggle button
-themeToggleBtn.addEventListener('click', () => {
-    const isDark = body.classList.toggle('dark-theme');
-    themeToggleBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-});
-
 // Load skill wheels when the page is loaded
 window.onload = () => {
     createSkillWheel('htmlSkill', 90);
