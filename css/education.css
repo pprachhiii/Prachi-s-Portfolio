@@ -1,0 +1,31 @@
+.education {
+    background-color: #0d253f;
+    color: white;
+    padding: 50px;
+    text-align: left;
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.education-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #FFB433;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.education-card::before {
+    content: "🎓";
+    position: absolute;
+    left: -30px;
+    font-size: 24px;
+    background: #FFB433;
+    padding: 5px;
+    border-radius: 50%;
+}

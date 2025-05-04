@@ -1,0 +1,48 @@
+.hero {
+    padding: 0 20px;
+    width: 100%;
+    min-height: 90vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #123458; 
+    text-align: center; /* Center text content */
+}
+
+.description {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Better spacing between elements */
+}
+
+.greeting {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFB433;
+}
+
+.description h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.highlight {
+    color: #FFB433;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
