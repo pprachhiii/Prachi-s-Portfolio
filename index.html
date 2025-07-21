@@ -1,218 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <meta name="description" content="Prachi Yadav – Full Stack Developer portfolio. Explore my projects, skills, and contact info.">
-    <meta name="author" content="Prachi Yadav">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prachi Yadav — Full-Stack Developer</title>
     
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/education.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <meta name="description" content="Prachi Yadav’s personal portfolio — full-stack developer focused on backend systems, clean APIs, and meaningful project builds." />
+    <meta name="author" content="Prachi Yadav" />
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <!-- Open Graph (Social Preview) -->
+    <meta property="og:title" content="Prachi Yadav — Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio showcasing full-stack web projects, backend engineering, and ongoing learning as a developer." />
+    <meta property="og:type" content="website" />
 
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo-container">
-                <h5 class="logo">PY</h5>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@prachi_yadav" />
+    <meta name="twitter:title" content="Prachi Yadav — Full-Stack Developer" />
+    <meta name="twitter:description" content="Building full-stack projects, exploring backend architecture, and sharing the journey." />
 
-    <main>
-        <section id="about" class="hero">
-            <div class="description">
-                <div class="greeting">Hello There!</div>
-                <h1>I'm <span class="highlight">Prachi Yadav</span>,<br>a Full-Stack Developer.</h1>
-                <p>
-                    I'm an aspiring MERN stack developer with a passion for building real-world projects, learning new technologies, and continuously improving my skills. I'm currently seeking an internship opportunity where I can contribute to a collaborative team, take on meaningful challenges, and grow through hands-on experience.
-                </p>
-                
-            </div>
-        </section>        
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skills-card">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5, CSS</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>Tailwind CSS</li>
-                            <li>Bootstrap</li>
-                            <li>EJS (Templating)</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    <div class="skills-card">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>RESTful APIs</li>
-                            <li>Middleware</li>
-                            <li>MVC Architecture</li>
-                        </ul>
-                    </div>
-                    <div class="skills-card">
-                        <h3>Database</h3>
-                        <ul>
-                            <li>MySQL</li>
-                            <li>MongoDB (Mongoose)</li>
-                        </ul>
-                    </div>
-                    <div class="skills-card">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>VS Code</li>
-                            <li>Postman</li>
-                            <li>Git & GitHub</li>
-                            <li>.env Configuration</li>
-                        </ul>
-                    </div>
-                    <div class="skills-card">
-                        <h3>Deployment & Services</h3>
-                        <ul>
-                            <li>MongoDB Atlas</li>
-                            <li>Render</li>
-                            <li>Railway</li>
-                            <li>Vercel</li>
-                        </ul>
-                    </div>
-                    <div class="skills-card">
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Problem-Solving</li>
-                            <li>Critical Thinking</li>
-                            <li>Attention to Detail</li>
-                            <li>Active Listening</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-            
-            <div class="project-card">
-                <img src="./photos/project1.png" alt="MERN Ecommerce-App">
-                <h3>Ecommerce Website</h3>
-                <p>MERN-based ecommerce app with product management, user authentication, PayPal payments, and order tracking.</p>
-                <a href="https://e-commerce-app-1-652v.onrender.com" class="project-link" target="_blank">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <img src="./photos/project2.png" alt="MERN Chat-App">
-                <h3>Real-Time Chat App</h3>
-                <p>Full-stack chat app using Socket.IO for live messaging, JWT login, and real-time user presence updates.</p>
-                <a href="https://chat-app-somd.onrender.com" class="project-link" target="_blank">View Project</a>
-            </div>                    
-            
-            <div class="project-card">
-                <img src="./photos/project3.png" alt="Booking Site">
-                <h3>StayEase – Booking Platform</h3>
-                <p>Airbnb-inspired listing site with property uploads, category filters, location search, and session-based login.</p>
-                <a href="https://stayease-smsm.onrender.com" class="project-link" target="_blank">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <img src="./photos/project4.png" alt="Item-manager Website">
-                <h3>Item-manager Website</h3>
-                <p>A responsive full-stack CRUD web app with React, TypeScript, Tailwind CSS, and efficient state management.</p>
-                <a href="https://ta-da.onrender.com/" class="project-link" target="_blank">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <img src="./photos/project5.png" alt="FasalForecast Crop Recommender">
-                <h3>FasalForecast</h3>
-                <p>Smart farming assistant that recommends crops using weather APIs, soil type, and temperature prediction.</p>
-                <a href="https://farming-agriculture-assistant-production.up.railway.app/" class="project-link" target="_blank">View Project</a>
-            </div>
-            
-            <div class="project-card">
-                <img src="./photos/project6.png" alt="To-Do App">
-                <h3>Ta-Da Web App</h3>
-                <p>Minimal to-do app with task CRUD features and responsive layout using Express and EJS.</p>
-                <a href="https://ta-da.onrender.com/" class="project-link" target="_blank">View Project</a>
-            </div>
-            
-            
-            </div>
-        </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="education">
-            <div class="education-container">
-                <h2>My Educational Journey</h2>
-                <div class="education-card">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>2023-26</li>
-                        <li>University of Lucknow</li>
-                        <li>Bachelor of Computer Application</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container" id="contact">
-            <div class="footer-contact">
-                <p>I'm always happy to connect and collaborate. Let’s build something amazing together!</p>
-                <h3>Contact Info</h3>
-                <p><strong>Phone:</strong> +91 9369350497</p>
-                <p><strong>Email:</strong> prachiiyadav2409@gmail.com</p>
-                <p><strong>Address:</strong> Lucknow, Uttar Pradesh</p>
-            </div>
-            <div class="footer-form">
-                <h3>Get in Touch</h3>
-                <form action="https://formspree.io/f/movepkgr" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required autocomplete="name" aria-label="Your Name">
-                    <input type="email" name="email" placeholder="Your Email" required autocomplete="email" aria-label="Your Email">
-                    <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
-                    <button type="submit" class="btn-primary">Send</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Prachi Yadav</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/prachi-yadav-87303231a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/pprachhiii" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-
-</body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
