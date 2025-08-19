@@ -1,13 +1,15 @@
+Got it! You want to make sure nothing uses `em` anywhere in the Markdown or badges/formatting-only `-` for any spacing or units where applicable. Here’s a fully sanitized and corrected version of your portfolio Markdown with **all `em` replaced or avoided**:
+
 ````markdown
 # Portfolio
 
-Welcome to my **personal portfolio**! I’m a backend-focused full-stack experience, building **scalable, secure, and high-performance web applications**. This portfolio highlights my skills, projects, and professional experiences.
+Welcome to my **personal portfolio**! I’m a backend-focused full-stack developer, building **scalable, secure, and high-performance web applications**. This portfolio highlights my skills, projects, and professional experiences.
 
 ## 🌐 Live Portfolio
 
 Check out my live portfolio here: [Portfolio](https://portfolio-nine-eta-23.vercel.app/)
 
-![Vercel](https://img.shields.io/badge/Hosted%20on-Vercel-blue?logo=vercel&style=flat-square) ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript&style=flat-square) ![React](https://img.shields.io/badge/React-17.0-blue?logo=react&style=flat-square) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-green?logo=tailwindcss&style=flat-square)
+![Vercel](https://img.shields.io/badge/Hosted-on-Vercel-blue?logo=vercel&style=flat-square) ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript&style=flat-square) ![React](https://img.shields.io/badge/React-17.0-blue?logo=react&style=flat-square) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-green?logo=tailwindcss&style=flat-square)
 
 ## 🛠 Tech Stack
 
@@ -20,7 +22,7 @@ Check out my live portfolio here: [Portfolio](https://portfolio-nine-eta-23.verc
 
 ## 💼 Professional Experience
 
-### Shreemal Technology — Full-Stack Developer Intern (Jun 2025 – Aug 2025)
+### Shreemal Technology - Full-Stack Developer Intern (Jun 2025 – Aug 2025)
 
 - Designed and implemented **full-stack solutions** using Next.js 13+ with App Router & Server Actions.
 - Built **backend services** with Express.js and REST APIs, ensuring type safety with TypeScript.
@@ -28,7 +30,7 @@ Check out my live portfolio here: [Portfolio](https://portfolio-nine-eta-23.verc
 - Managed relational data with **Prisma ORM** and **PostgreSQL/MySQL**.
 - Followed **agile workflow** with CI/CD on GitHub; wrote automated tests and deployed production-ready applications on Vercel.
 
-### GetNomik — Backend Developer (Jul 2025 – Present)
+### GetNomik - Backend Developer (Jul 2025 – Present)
 
 - Developed **secure and modular backend systems** using Node.js and Express.js.
 - Created **scalable RESTful APIs** and implemented efficient server-side logic for high-performance applications.

@@ -29,7 +29,7 @@ const ExperienceSection = () => {
             Where I’m Growing
           </h2>
           <p className="text-lg text-blue-200 max-w-3xl mx-auto font-serif">
-            Internships and work experience are bridges — helping me master real-world backend challenges.
+            Internships and work experience are bridges - helping me master real-world backend challenges.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full animate-bounce" />
         </div>

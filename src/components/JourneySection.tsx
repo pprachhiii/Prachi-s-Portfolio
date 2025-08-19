@@ -19,7 +19,7 @@ export const JourneySection = () => {
       year: '2023',
       title: 'Foundations Built',
       description:
-        'Started my coding journey in college. Focused on HTML, CSS, C, and core CS subjects like DSA and OS. No big skills yet — but the spark was real.',
+        'Started my coding journey in college. Focused on HTML, CSS, C, and core CS subjects like DSA and OS. No big skills yet - but the spark was real.',
       feeling: 'Laying bricks with curiosity',
       icon: Lightbulb,
       mood: 'discovery',
@@ -46,7 +46,7 @@ export const JourneySection = () => {
       year: 'Now',
       title: 'Thinking Bigger',
       description:
-        'Looking to build real-world impactful projects — not just for the resume, but for people. Brainstorming ideas that solve actual problems and learning by shipping.',
+        'Looking to build real-world impactful projects - not just for the resume, but for people. Brainstorming ideas that solve actual problems and learning by shipping.',
       feeling: 'Ready for the next leap',
       icon: Mountain,
       mood: 'healing',
@@ -90,7 +90,7 @@ export const JourneySection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">My Journey</h2>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
-            It's been a mix of bugs, breakthroughs, and late-night debugging — and somehow, it all adds up.
+            It's been a mix of bugs, breakthroughs, and late-night debugging - and somehow, it all adds up.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
         </div>

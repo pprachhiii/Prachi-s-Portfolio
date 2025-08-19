@@ -26,7 +26,7 @@ const NotFound = () => {
           Beam me back home
         </a>
         <p className="text-sm text-gray-300 mt-6 italic">
-          Tip: Check your URL — the void is tricky!
+          Tip: Check your URL - the void is tricky!
         </p>
       </div>
     </div>
