@@ -1,0 +1,11 @@
+import NavbarSection from '@/components/NavbarSection';
+import HeroSection from '@/components/HeroSection';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen">
+      <NavbarSection />
+      <HeroSection />
+    </div>
+  );
+}

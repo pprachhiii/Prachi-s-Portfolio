@@ -1,41 +1,74 @@
-# Prachi's Portfolio
+````markdown
+# Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills as a Front-end Developer, Cybersecurity Enthusiast, and Video Editor, along with a collection of my projects and contact information.
+Welcome to my **personal portfolio**! I’m a backend-focused full-stack experience, building **scalable, secure, and high-performance web applications**. This portfolio highlights my skills, projects, and professional experiences.
 
-## Table of Contents
+## 🌐 Live Portfolio
 
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Check out my live portfolio here: [Portfolio](https://portfolio-nine-eta-23.vercel.app/)
 
-## Demo
+![Vercel](https://img.shields.io/badge/Hosted%20on-Vercel-blue?logo=vercel&style=flat-square) ![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?logo=javascript&style=flat-square) ![React](https://img.shields.io/badge/React-17.0-blue?logo=react&style=flat-square) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-green?logo=tailwindcss&style=flat-square)
 
-You can view my portfolio live [here](#) (insert your live demo link).
+## 🛠 Tech Stack
 
-## Features
+- **Backend:** Node.js, Express.js, TypeScript, Prisma, PostgreSQL, MySQL, JWT, RBAC
+- **Frontend / Full-Stack:** React, Next.js 13+, TailwindCSS, Vite
+- **Tools & Utilities:** Upstash, Postman, Razorpay, SMTP, CI/CD with GitHub, Vercel
+- **Forms & State:** React Hook Form, TanStack React Query
+- **Data Visualization:** Recharts
+- **Animations & UX:** Tailwind Animations, Sonner
 
-- **Responsive Design**: The portfolio adapts to various screen sizes for an optimal viewing experience.
-- **Skill Wheels**: Visual representation of my skills using Chart.js.
-- **Light/Dark Mode Toggle**: Users can switch between light and dark themes for a personalized experience.
-- **Projects Showcase**: A section displaying my work with links to live demos or GitHub repositories.
-- **Contact Form**: A simple form for visitors to get in touch.
+## 💼 Professional Experience
 
-## Technologies Used
+### Shreemal Technology — Full-Stack Developer Intern (Jun 2025 – Aug 2025)
 
-- **HTML**: Structure of the web pages.
-- **CSS**: Styling and layout.
-- **JavaScript**: Interactivity and functionality (including theme toggle and skill wheels).
-- **Chart.js**: A library for creating the skill wheels.
+- Designed and implemented **full-stack solutions** using Next.js 13+ with App Router & Server Actions.
+- Built **backend services** with Express.js and REST APIs, ensuring type safety with TypeScript.
+- Integrated **Upstash** for caching, rate-limiting, and scheduled tasks.
+- Managed relational data with **Prisma ORM** and **PostgreSQL/MySQL**.
+- Followed **agile workflow** with CI/CD on GitHub; wrote automated tests and deployed production-ready applications on Vercel.
 
-## Installation
+### GetNomik — Backend Developer (Jul 2025 – Present)
 
-To run this project locally, follow these steps:
+- Developed **secure and modular backend systems** using Node.js and Express.js.
+- Created **scalable RESTful APIs** and implemented efficient server-side logic for high-performance applications.
+- Implemented **authentication with JWT**, role-based access control (RBAC), and transactional email workflows (SMTP).
+- Integrated **Razorpay** payment solutions for seamless user transactions.
+- Designed optimized **MySQL databases** to ensure data integrity and smooth operations.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+## 📂 Featured Projects
+
+- Building **modular, scalable, and secure backend services**
+- Integrating **authentication, payment gateways, and email workflows**
+- Designing **relational databases** with optimized queries
+- Showcasing **interactive frontend components** with clean design
+
+## ⚡ Quick Start
+
+```bash
+# Clone the repository
+git clone git@github.com:pprachhiii/Prachi-s-Portfolio.git
+
+# Navigate into the folder
+cd Prachi-s-Portfolio
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
+```
+````
+
+## 📫 Contact Me
+
+- **Email:** [prachiyadav2409@gmail.com](mailto:prachiyadav2409@gmail.com)
+- **LinkedIn:** [Prachi Yadav](https://www.linkedin.com/in/prachi-yadav-87303231a)
+
+---
+
+Crafted with ❤️ & ☕.
+
+```
+
+```

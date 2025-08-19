@@ -3,7 +3,7 @@ import {
   Code, Terminal, Globe, Database, Zap, GitBranch, Layers, Star
 } from 'lucide-react';
 
-const TechStackSection = () => {
+const SkillsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -68,7 +68,7 @@ const TechStackSection = () => {
 
   return (
     <section
-      id="skills"
+      id="skill"
       ref={sectionRef}
       className="min-h-screen px-6 py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 transition-all duration-1000 text-white"
     >
@@ -118,4 +118,4 @@ const TechStackSection = () => {
   );
 };
 
-export default TechStackSection;
+export default SkillsSection;
