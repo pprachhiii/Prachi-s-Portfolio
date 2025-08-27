@@ -21,7 +21,7 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "MERN Ecommerce-App",
+      title: "Ecommerce-App",
       description:
         "Full-featured ecommerce app with product management, user authentication, PayPal integration, and real-time order tracking.",
       tech: ["MongoDB", "Express", "React", "Node.js", "PayPal API"],
@@ -29,28 +29,28 @@ const ProjectsSection = () => {
       live: "https://e-commerce-app-1-652v.onrender.com",
     },
     {
-      title: "MERN Chat-App",
+      title: "Chat App",
       description:
-        "Real-time messaging app using WebSockets with JWT login, online user status, and scalable backend architecture.",
-      tech: ["MongoDB", "Express", "React", "Node.js", "Socket.IO"],
-      github: "https://github.com/pprachhiii/MERN-Chat-App",
-      live: "https://chat-app-somd.onrender.com",
+        "Built a full-stack real-time one-to-one chat application with secure JWT authentication, media sharing, and live messaging. Includes user profile management, online presence tracking, and cloud-based media storage.",
+      tech: ["React", "Express.js", "Socket.IO", "MongoDB", "JWT"],
+      github: "https://github.com/pprachhiii/chat-app",
+      live: "https://chat-app-somd.onrender.com/login",
     },
     {
-      title: "StayEase – Booking Platform",
+      title: "Rental Listing Platform",
       description:
-        "Airbnb-style app for listing and booking stays with location filters, session auth, and responsive UI.",
-      tech: ["React", "Next.js", "MongoDB", "Tailwind CSS"],
-      github: "https://github.com/pprachhiii/stayease",
-      live: "https://stayease-smsm.onrender.com",
+        "Created a rental marketplace featuring dynamic property listings and secure session management. Optimized image upload and delivery to enhance user experience and reduce load times.",
+      tech: ["React", "Next.js", "MongoDB", "Tailwind CSS", "Session Auth"],
+      github: "https://github.com/pprachhiii/StayEase",
+      live: "https://stayease-smsm.onrender.com/listings",
     },
     {
-      title: "Item-manager Website",
+      title: "Item-Manager",
       description:
-        "A responsive full-stack CRUD platform using React + TypeScript and efficient global state management.",
-      tech: ["React", "TypeScript", "Tailwind", "Redux Toolkit", "Node.js"],
-      github: "https://github.com/pprachhiii/item-manager-typescript",
-      live: "https://ta-da.onrender.com",
+        "Developed a full-stack CRUD application with a modular codebase for scalable feature additions. Implemented global state synchronization to maintain a consistent UI across sessions.",
+      tech: ["React", "Tailwind CSS", "Vite", "Node.js", "CRUD"],
+      github: "https://github.com/pprachhiii/item-manager",
+      live: "https://item-manager-cee0.onrender.com/",
     },
     {
       title: "FasalForecast – Crop Recommender",

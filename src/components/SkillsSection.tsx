@@ -36,18 +36,13 @@ const SkillsSection = () => {
     backend: [
       { name: 'Node.js', icon: Terminal },
       { name: 'Express.js', icon: Terminal },
-      { name: 'REST APIs', icon: Zap },
-      { name: 'Middleware', icon: Layers },
-      { name: 'MVC Architecture', icon: Layers },
       { name: 'Redis', icon: Database },
     ],
     tools: [
       { name: 'Git & GitHub', icon: GitBranch },
-      { name: 'GitHub Actions', icon: Zap },
       { name: 'Postman', icon: Zap },
       { name: 'APIDog', icon: Zap },
       { name: 'VS Code', icon: Star },
-      { name: 'CI/CD Pipelines', icon: Layers },
     ],
     database: [
       { name: 'MongoDB (Mongoose)', icon: Database },
@@ -82,35 +77,32 @@ const SkillsSection = () => {
         <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
       </div>
 
-
       <div
-        className={`grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto ${
+        className={`grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        } transition-all duration-1000`}
+        }`}
       >
         {Object.entries(techStack).map(([category, items], i) => (
-          <div
-            key={category}
-            className="space-y-3"
-            style={{ transitionDelay: `${i * 150}ms` }}
-          >
-            <h3 className="text-xl font-semibold capitalize text-center text-blue-300">
+          <div key={category} style={{ transitionDelay: `${i * 150}ms` }}>
+            {/* Category Heading */}
+            <h3 className="text-xl font-semibold capitalize text-center text-blue-300 mb-4">
               {category}
             </h3>
-            {items.map((item) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={item.name}
-                  className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300"
-                >
-                  <div className="flex items-center">
-                    <Icon className="w-5 h-5 text-yellow-300 mr-3" />
-                    <span className="text-white font-medium">{item.name}</span>
-                  </div>
-                </div>
-              );
-            })}
+
+            {/* Skills Box */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl shadow-xl p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
+              <ul className="grid gap-2">
+                {items.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <li key={item.name} className="flex items-center gap-3">
+                      <Icon className="w-5 h-5 text-yellow-300 shrink-0" />
+                      <span className="text-white">{item.name}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         ))}
       </div>
