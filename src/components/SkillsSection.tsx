@@ -21,12 +21,10 @@ const SkillsSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const techStack = {
+    const techStack = {
     frontend: [
       { name: 'HTML5', icon: Code },
       { name: 'CSS3', icon: Code },
-      { name: 'JavaScript (ES6+)', icon: Code },
-      { name: 'TypeScript', icon: Terminal },
       { name: 'Bootstrap', icon: Star },
       { name: 'Tailwind CSS', icon: Star },
       { name: 'EJS', icon: Code },
@@ -52,6 +50,8 @@ const SkillsSection = () => {
     programming: [
       { name: 'Java', icon: Terminal },
       { name: 'Python', icon: Terminal },
+      { name: 'JavaScript (ES6+)', icon: Code },
+      { name: 'TypeScript', icon: Terminal },
     ],
     softSkills: [
       { name: 'Problem-solving', icon: Star },
