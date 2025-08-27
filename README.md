@@ -1,5 +1,3 @@
-Got it! You want to make sure nothing uses `em` anywhere in the Markdown or badges/formatting-only `-` for any spacing or units where applicable. Here’s a fully sanitized and corrected version of your portfolio Markdown with **all `em` replaced or avoided**:
-
 ````markdown
 # Portfolio
 
