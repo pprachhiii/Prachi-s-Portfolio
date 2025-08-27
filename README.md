@@ -1,4 +1,3 @@
-````markdown
 # Portfolio
 
 Welcome to my **personal portfolio**! I’m a backend-focused full-stack developer, building **scalable, secure, and high-performance web applications**. This portfolio highlights my skills, projects, and professional experiences.
@@ -22,6 +21,7 @@ npm install
 # Run locally
 npm run dev
 ```
+
 ````
 
 ## 📫 Contact Me
@@ -35,4 +35,4 @@ Crafted with ❤️ & ☕.
 
 ```
 
-```
+````
