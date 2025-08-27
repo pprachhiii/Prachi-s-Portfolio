@@ -4,9 +4,7 @@ Welcome to my **personal portfolio**! I’m a backend-focused full-stack develop
 
 Check out my live portfolio here: [Portfolio](https://prachideveloperportfolio.vercel.app/)
 
-## 📫 Contact Me
+## Contact Me
 
 - **Email:** [prachiyadav2409@gmail.com](mailto:prachiyadav2409@gmail.com)
 - **LinkedIn:** [Prachi Yadav](https://www.linkedin.com/in/prachi-yadav-87303231a)
-
-Crafted with ❤️ & ☕.
