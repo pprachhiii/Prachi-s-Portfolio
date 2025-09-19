@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start">
         {/* Download Button */}
         <a
-          href="https://drive.google.com/uc?export=download&id=1SJijydQdGSN9uI0O1vZb3I5R70ge-YVU"
+          href="https://drive.google.com/uc?export=download&id=1nvhLfFKXVMG-gsoYzQUgstuw9-7u9Z83"
           className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
         >
           Download Resume
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         {/* View Button */}
         <a
-          href="https://drive.google.com/file/d/1SJijydQdGSN9uI0O1vZb3I5R70ge-YVU/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nvhLfFKXVMG-gsoYzQUgstuw9-7u9Z83/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"

@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import { FaReact, FaNodeJs, FaDatabase, FaBootstrap } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiShadcnui, SiMongodb, SiPostgresql, SiSocketdotio, SiExpress, SiTypescript, SiVite, SiPaypal, SiEjs } from "react-icons/si";
+import { WiDayCloudy } from "react-icons/wi"; 
 
 const ProjectsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,54 +24,71 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "Ecommerce-App",
+      title: "DHARA",
       description:
-        "Full-featured ecommerce app with product management, user authentication, PayPal integration, and real-time order tracking.",
-      tech: ["MongoDB", "Express", "React", "Node.js", "PayPal API"],
-      github: "https://github.com/pprachhiii/MERN-ecommerce-app",
-      live: "https://e-commerce-app-1-652v.onrender.com",
+        "A community-driven civic platform that empowers citizens to report neglected spaces, engage in community voting, and organize volunteer-driven cleanups, tree planting, and beautification drives. Features authority contact tracking, evidence-based reporting, and sustained monitoring to ensure long-term impact. Built with Next.js, TailwindCSS, ShadCN/UI, Node.js, and PostgreSQL to deliver a scalable, inclusive solution for environmental stewardship in India.",
+      tech: [SiNextdotjs, SiTailwindcss, SiShadcnui, FaNodeJs, SiPostgresql],
+      github: "https://github.com/pprachhiii/dhara",
+      live: "https://dhara-six.vercel.app/",
+    },
+    {
+      title: "2070 Wildlife & Environmental Dashboard",
+      description:
+        "An interactive React + TypeScript application for wildlife tracking, environmental monitoring, and conservation planning. Includes real-time alerts, predictive species projections, ecological simulations, and interactive maps with heatmaps, choropleths, and migration paths. Built with React, TypeScript, TailwindCSS, Leaflet, and Recharts, it demonstrates advanced data visualization, responsive design, and ecological insight for researchers and policymakers.",
+      tech: [FaReact, SiTypescript, SiTailwindcss],
+      github: "https://github.com/pprachhiii/2070",
+      live: "https://2070-ten.vercel.app/",
     },
     {
       title: "Chat App",
       description:
-        "Built a full-stack real-time one-to-one chat application with secure JWT authentication, media sharing, and live messaging. Includes user profile management, online presence tracking, and cloud-based media storage.",
-      tech: ["React", "Express.js", "Socket.IO", "MongoDB", "JWT"],
+        "Full-stack real-time chat application with JWT authentication, media sharing, online presence tracking, and cloud-based file storage. Designed with a responsive interface and scalable architecture using React, Express, and Socket.IO for instant one-to-one messaging.",
+      tech: [FaReact, SiExpress, SiSocketdotio, SiMongodb],
       github: "https://github.com/pprachhiii/chat-app",
       live: "https://chat-app-somd.onrender.com/login",
     },
     {
       title: "Rental Listing Platform",
       description:
-        "Created a rental marketplace featuring dynamic property listings and secure session management. Optimized image upload and delivery to enhance user experience and reduce load times.",
-      tech: ["React", "Next.js", "MongoDB", "Tailwind CSS", "Session Auth"],
+        "Rental marketplace featuring secure session-based authentication, advanced property search, and optimized image upload/delivery pipelines. Built with Next.js and MongoDB, it provides a seamless browsing experience with dynamic listings and responsive UI.",
+      tech: [FaReact, SiNextdotjs, SiMongodb, SiTailwindcss],
       github: "https://github.com/pprachhiii/StayEase",
       live: "https://stayease-smsm.onrender.com/listings",
     },
     {
       title: "Item-Manager",
       description:
-        "Developed a full-stack CRUD application with a modular codebase for scalable feature additions. Implemented global state synchronization to maintain a consistent UI across sessions.",
-      tech: ["React", "Tailwind CSS", "Vite", "Node.js", "CRUD"],
+        "Scalable CRUD web application with modular code architecture for easy feature expansion. Implements global state synchronization to ensure consistency across sessions, responsive UI with Tailwind, and efficient state management using React.",
+      tech: [FaReact, SiTailwindcss, SiVite, FaNodeJs],
       github: "https://github.com/pprachhiii/item-manager",
       live: "https://item-manager-cee0.onrender.com/",
     },
     {
+      title: "Ecommerce-App",
+      description:
+        "End-to-end ecommerce solution with product catalog, secure authentication, PayPal payment integration, and live order tracking. Features admin product management, responsive layouts, and a scalable MERN stack backend for real-world use cases.",
+      tech: [SiMongodb, SiExpress, FaReact, FaNodeJs, SiPaypal],
+      github: "https://github.com/pprachhiii/MERN-ecommerce-app",
+      live: "https://e-commerce-app-1-652v.onrender.com",
+    },
+    {
       title: "FasalForecast – Crop Recommender",
       description:
-        "AgriTech tool using weather APIs and soil data to recommend optimal crops using ML logic.",
-      tech: ["Node.js", "Express", "Weather API", "ML Model"],
+        "AgriTech tool that leverages weather APIs, soil data, and recommend the most suitable crops for farmers. Designed with Node.js and Express for API handling, the platform integrates data-driven insights to improve agricultural planning.",
+      tech: [FaNodeJs, SiExpress, WiDayCloudy],
       github: "https://github.com/pprachhiii/fasalforecast",
       live: "https://farming-agriculture-assistant-production.up.railway.app/",
     },
     {
       title: "Ta-Da – To-Do Web App",
       description:
-        "Minimal task manager using Express and EJS with full task CRUD, filters, and responsive layout.",
-      tech: ["Express.js", "EJS", "MongoDB", "Bootstrap"],
+        "Lightweight yet feature-rich task manager with task CRUD, filters, and responsive layouts. Built using Express.js and EJS templating, with MongoDB for persistence and Bootstrap for quick UI design, ensuring simplicity and usability.",
+      tech: [SiExpress, SiEjs, SiMongodb, FaBootstrap],
       github: "https://github.com/pprachhiii/To-Do-App",
       live: "https://ta-da.onrender.com/",
     },
   ];
+
 
   return (
     <section
@@ -125,14 +145,12 @@ const ProjectsSection = () => {
                   <p className="text-blue-100 mb-6 leading-relaxed">{project.description}</p>
 
                   <div className="mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-3 py-1 bg-yellow-300/10 text-yellow-200 rounded-full text-xs font-medium"
-                        >
-                          {tech}
-                        </span>
+                    <div className="flex flex-wrap gap-3">
+                      {project.tech.map((Icon, i) => (
+                        <Icon
+                          key={i}
+                          className="w-6 h-6 text-yellow-300 hover:scale-110 transition-transform"
+                        />
                       ))}
                     </div>
                   </div>
