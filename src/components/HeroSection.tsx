@@ -20,21 +20,19 @@ const HeroSection = () => {
           ,<br />
           a{" "}
           <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-            Full-Stack Developer.
+            Software Developer.
           </span>
         </h1>
 
         <p className="text-lg text-blue-200 max-w-2xl">
-          Currently open to <strong>internship</strong> opportunities where I
-          can bring value, learn from experienced teams, and help ship
-          meaningful features that make an impact.
+        Open to internships where I can apply my skills, learn from seasoned developers, and help build impactful software solutions.        
         </p>
 
         {/* Resume Buttons */}
       <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start">
         {/* Download Button */}
         <a
-          href="https://drive.google.com/uc?export=download&id=1nvhLfFKXVMG-gsoYzQUgstuw9-7u9Z83"
+          href="https://drive.google.com/uc?export=download&id=1MqWmMqvv1N6Dme55OC2pGcPiXW2FlfmZ"
           className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
         >
           Download Resume
@@ -42,7 +40,7 @@ const HeroSection = () => {
 
         {/* View Button */}
         <a
-          href="https://drive.google.com/file/d/1nvhLfFKXVMG-gsoYzQUgstuw9-7u9Z83/view?usp=sharing"
+          href="https://drive.google.com/file/d/1MqWmMqvv1N6Dme55OC2pGcPiXW2FlfmZ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"

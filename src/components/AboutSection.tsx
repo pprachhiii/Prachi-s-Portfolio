@@ -29,7 +29,7 @@ const AboutSection = () => {
             <div className="relative w-full h-full flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-orange-400/10 rounded-3xl transform rotate-3" />
               <div
-                className={`relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden shadow-2xl w-full h-full transition-all duration-1000 delay-300 ${
+                className={`relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden shadow-2xl w-11/12 md:w-10/12 h-full transition-all duration-1000 delay-300 ${
                   isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
               >
@@ -39,7 +39,7 @@ const AboutSection = () => {
                       <span className="text-white text-xl font-bold">P</span>
                     </div>
                     <h4 className="text-lg md:text-xl font-semibold mb-1">Prachi</h4>
-                    <p className="text-blue-200 text-sm md:text-base">Full-Stack Developer</p>
+                    <p className="text-blue-200 text-sm md:text-base">Software Developer</p>
                     <div className="space-y-2 text-xs md:text-sm mt-4">
                       <div className="flex justify-between text-blue-300">
                         <span>Experience:</span>
@@ -60,13 +60,13 @@ const AboutSection = () => {
             <div className="flex flex-col justify-center h-full">
               <div className="text-base md:text-lg text-blue-200 space-y-4 leading-relaxed">
                 <p>
-                  Full-stack developer specializing in backend systems that
+                  Software developer specializing in backend systems that
                   prioritize performance, scalability, and maintainability. Strong
                   collaborator with a focus on clean code and efficient
                   development workflows.
                 </p>
                 <p>
-                  Experienced in designing APIs, integrating services, and
+                  Focussed in designing APIs, integrating services, and
                   building robust architectures that support real-world
                   applications.
                 </p>

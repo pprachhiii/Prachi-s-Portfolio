@@ -1,9 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Confetti from 'react-confetti';
 import { Mail, Github, Linkedin, Heart, Coffee, MessageCircle, Globe } from 'lucide-react';
 
 const ContactSection = () => {
+  const [showThankYou, setShowThankYou] = useState(false);
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault(); // Prevent default redirect
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    // Send form data to Formspree via fetch
+    await fetch('https://formspree.io/f/movepkgr', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    // Show thank-you overlay
+    setShowThankYou(true);
+
+    // Hide thank-you overlay after 5 seconds
+    setTimeout(() => setShowThankYou(false), 5000);
+
+    // Reset form
+    e.target.reset();
+  };
+
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900">
+    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative">
+      {/* Confetti & Thank You Overlay */}
+      {showThankYou && (
+        <>
+          <Confetti width={window.innerWidth} height={window.innerHeight} />
+          <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center z-50 animate-fadeInOut">
+            <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4 text-center">
+              Thank You!🌸
+            </h2>
+            <p className="text-white text-lg text-center max-w-lg">
+              Your message has been received. I appreciate you reaching out and will get back to you soon!
+            </p>
+          </div>
+        </>
+      )}
+
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -79,9 +120,9 @@ const ContactSection = () => {
             </h3>
           
             <form
-              action="https://formspree.io/f/movepkgr"
               method="POST"
               className="space-y-4"
+              onSubmit={handleFormSubmit}
             >
               <div>
                 <input 
@@ -132,6 +173,21 @@ const ContactSection = () => {
           <Coffee className="w-4 h-4 text-yellow-300" />
         </div>
       </div>
+
+      {/* Optional CSS for fade-in/fade-out */}
+      <style>
+        {`
+          @keyframes fadeInOut {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+          }
+          .animate-fadeInOut {
+            animation: fadeInOut 5s ease forwards;
+          }
+        `}
+      </style>
     </section>
   );
 };

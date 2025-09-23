@@ -12,10 +12,10 @@ const ExperienceSection = () => {
       description: `Architected and deployed scalable full-stack features using Next.js 13+ with App Router and Server Actions, along with Express.js REST APIs. Managed relational databases, optimized backend performance, and deployed production-ready apps on Vercel.`,
       achievements: [
         "Optimized backend caching and rate-limiting with Upstash",
-        "Implemented CI/CD pipelines on GitHub with automated testing",
-        "Validated APIs with Postman and ensured type-safe development"
+        "Validated APIs with Postman and ensured type-safe development",
+        "Designed API logic according to feature requirements and collaborated on frontend integration to deliver cohesive, production-ready functionality"
       ],
-      tech: ['Next.js 13+', 'Express.js', 'TypeScript', 'Upstash', 'Prisma', 'PostgreSQL', 'MySQL', 'Vercel', 'Postman']
+      tech: ['Next.js 13+', 'Express.js', 'TypeScript', 'Upstash', 'Prisma', 'PostgreSQL', 'Vercel', 'Postman']
     },
     {
       role: 'Backend Developer',
