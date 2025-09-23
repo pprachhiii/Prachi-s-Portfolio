@@ -174,7 +174,6 @@ const ContactSection = () => {
         </div>
       </div>
 
-      {/* Optional CSS for fade-in/fade-out */}
       <style>
         {`
           @keyframes fadeInOut {
