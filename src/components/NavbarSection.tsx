@@ -29,38 +29,26 @@ const NavbarSection = () => {
 
   return (
     <header className="fixed w-full z-50 backdrop-blur-sm bg-white/10 border-b border-white/20">
-      <nav className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto text-white">
-        {/* Logo */}
+      <nav className="relative flex items-center justify-between px-6 py-4 max-w-7xl mx-auto text-white">
+        {/* Logo on the left */}
         <div className="w-11 h-11 flex items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 text-white font-bold text-xl shadow-md">
           PY
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          className="lg:hidden block text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Menu className="h-6 w-6" />
-        </button>
-
-        {/* Nav + Close */}
-        <div className="flex items-center gap-4">
-          <ul
-            className={`${
-              isOpen ? "block mt-4" : "hidden"
-            } lg:flex lg:items-center gap-4 text-base font-semibold transition-all duration-300`}
-          >
+        {/* Nav items in center */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <ul className="hidden lg:flex items-center gap-6 text-base font-semibold">
             {navItems.map(({ path, label }) => {
               const isActive = location.pathname === path;
               return (
                 <li key={path}>
                   <Link
                     to={path}
-                    onClick={() => setIsOpen(false)}
-                    className={`relative px-3 py-1.5 transition duration-300 rounded-full 
-                      ${isActive 
-                        ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-white" 
-                        : "text-white hover:text-white hover:bg-gradient-to-r from-yellow-400 to-orange-400"}`}
+                    className={`relative px-3 py-1.5 transition duration-300 rounded-full ${
+                      isActive
+                        ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-white"
+                        : "text-white hover:text-white hover:bg-gradient-to-r from-yellow-400 to-orange-400"
+                    }`}
                   >
                     {label}
                   </Link>
@@ -68,14 +56,40 @@ const NavbarSection = () => {
               );
             })}
           </ul>
-
-          <button
-            onClick={() => setIsVisible(false)}
-            className="text-white hover:text-yellow-400 transition"
-          >
-            <X className="h-6 w-6" />
-          </button>
         </div>
+
+        {/* X button on the extreme right */}
+        <button
+          onClick={() => setIsVisible(false)}
+          className="absolute right-4 text-white hover:text-yellow-400 transition z-50"
+        >
+          <X className="h-6 w-6" />
+        </button>
+
+        {/* Mobile menu toggle */}
+        <button
+          className="lg:hidden text-white focus:outline-none ml-4"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <Menu className="h-6 w-6" />
+        </button>
+
+        {/* Mobile menu */}
+        {isOpen && (
+          <ul className="absolute top-full left-0 w-full bg-black/70 backdrop-blur-sm flex flex-col items-center gap-6 py-8 lg:hidden z-40">
+            {navItems.map(({ path, label }) => (
+              <li key={path}>
+                <Link
+                  to={path}
+                  onClick={() => setIsOpen(false)}
+                  className="text-white text-xl px-4 py-2 hover:text-yellow-400 transition"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </nav>
     </header>
   );

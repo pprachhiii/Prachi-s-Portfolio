@@ -25,22 +25,22 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg text-blue-200 max-w-2xl">
-        Open to internships where I can apply my skills, learn from seasoned developers, and help build impactful software solutions.        
+          Seeking internships to apply my skills, collaborate with experienced developers, and contribute to meaningful software solutions.        
         </p>
 
         {/* Resume Buttons */}
       <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start">
         {/* Download Button */}
         <a
-          href="https://drive.google.com/uc?export=download&id=1MqWmMqvv1N6Dme55OC2pGcPiXW2FlfmZ"
+          href="https://drive.google.com/uc?export=download&id=1_Hvhs1a6DaCdMEkL2JTGo8t1Af0RELhz"
           className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
         >
           Download Resume
         </a>
 
         {/* View Button */}
-        <a
-          href="https://drive.google.com/file/d/1MqWmMqvv1N6Dme55OC2pGcPiXW2FlfmZ/view?usp=sharing"
+        <a 
+          href="https://drive.google.com/file/d/1_Hvhs1a6DaCdMEkL2JTGo8t1Af0RELhz/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
