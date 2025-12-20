@@ -15,7 +15,7 @@ const ProjectsSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 }
     );
 
     if (sectionRef.current) observer.observe(sectionRef.current);
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
     <section
       id="projects"
       ref={sectionRef}
-      className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+      className="min-h-screen py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
     >
       <div className="max-w-6xl mx-auto">
         <div
