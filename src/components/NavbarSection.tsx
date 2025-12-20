@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const NavbarSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isDesktopVisible, setIsDesktopVisible] = useState(true);
   const location = useLocation();
 
   const navItems = [
@@ -16,27 +16,34 @@ const NavbarSection = () => {
     { path: "/contact", label: "Contact" },
   ];
 
-  if (!isVisible) {
+  /* ================= DESKTOP HIDDEN ================= */
+  if (!isDesktopVisible) {
     return (
       <button
-        onClick={() => setIsVisible(true)}
-        className="fixed top-4 right-4 z-50 p-2 rounded-md bg-gradient-to-r from-yellow-400 to-orange-400 text-white shadow-md"
+        onClick={() => setIsDesktopVisible(true)}
+        className="sticky top-4 right-6 ml-auto mr-6 mt-4 z-50 hidden lg:flex text-white"
       >
-        <Menu className="h-6 w-6" />
+        <Menu className="h-7 w-7" />
       </button>
     );
   }
 
   return (
-    <header className="fixed w-full z-50 backdrop-blur-sm bg-white/10 border-b border-white/20">
-      <nav className="relative flex items-center justify-between px-6 py-4 max-w-7xl mx-auto text-white">
-        {/* Logo on the left */}
-        <div className="w-11 h-11 flex items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 text-white font-bold text-xl shadow-md">
-          PY
-        </div>
+    <div
+      className="bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 text-white"
+    >
+      <header className="sticky top-0 z-50 bg-white/10 backdrop-blur-sm border-b border-white/20 transition-all">
+      <nav className="max-w-7xl mx-auto px-6 py-4 text-white">
 
-        {/* Nav items in center */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
+        {/* TOP ROW */}
+        <div className="flex items-center justify-between">
+
+          {/* LOGO */}
+          <div className="w-11 h-11 flex items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-orange-400 font-bold text-xl shadow-md">
+            PY
+          </div>
+
+          {/* DESKTOP NAV */}
           <ul className="hidden lg:flex items-center gap-6 text-base font-semibold">
             {navItems.map(({ path, label }) => {
               const isActive = location.pathname === path;
@@ -44,10 +51,10 @@ const NavbarSection = () => {
                 <li key={path}>
                   <Link
                     to={path}
-                    className={`relative px-3 py-1.5 transition duration-300 rounded-full ${
+                    className={`px-3 py-1.5 rounded-full transition ${
                       isActive
-                        ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-white"
-                        : "text-white hover:text-white hover:bg-gradient-to-r from-yellow-400 to-orange-400"
+                        ? "bg-gradient-to-r from-yellow-400 to-orange-400"
+                        : "hover:bg-gradient-to-r from-yellow-400 to-orange-400"
                     }`}
                   >
                     {label}
@@ -56,42 +63,61 @@ const NavbarSection = () => {
               );
             })}
           </ul>
+
+          {/* DESKTOP CLOSE */}
+          <button
+            onClick={() => setIsDesktopVisible(false)}
+            className="hidden lg:flex"
+          >
+            <X className="h-7 w-7" />
+          </button>
+
+          {/* MOBILE TOGGLE */}
+          <button
+            className="lg:hidden"
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+          >
+            {isMobileOpen ? (
+              <X className="h-7 w-7" />
+            ) : (
+              <Menu className="h-7 w-7" />
+            )}
+          </button>
         </div>
 
-        {/* X button on the extreme right */}
-        <button
-          onClick={() => setIsVisible(false)}
-          className="absolute right-4 text-white hover:text-yellow-400 transition z-50"
+        {/* MOBILE MENU — PUSHES CONTENT */}
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-300 ${
+            isMobileOpen ? "max-h-[500px] mt-6" : "max-h-0"
+          }`}
         >
-          <X className="h-6 w-6" />
-        </button>
+          <ul className="flex flex-col items-center gap-6 py-6">
+            {navItems.map(({ path, label }) => {
+  const isActive = location.pathname === path;
 
-        {/* Mobile menu toggle */}
-        <button
-          className="lg:hidden text-white focus:outline-none ml-4"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Menu className="h-6 w-6" />
-        </button>
+  return (
+    <li key={path}>
+      <Link
+        to={path}
+        onClick={() => setIsMobileOpen(false)}
+        className={`px-3 py-1.5 rounded-full text-xl transition ${
+          isActive
+            ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-black"
+            : "hover:text-yellow-400"
+        }`}
+      >
+        {label}
+      </Link>
+    </li>
+  );
+})}
 
-        {/* Mobile menu */}
-        {isOpen && (
-          <ul className="absolute top-full left-0 w-full bg-black/70 backdrop-blur-sm flex flex-col items-center gap-6 py-8 lg:hidden z-40">
-            {navItems.map(({ path, label }) => (
-              <li key={path}>
-                <Link
-                  to={path}
-                  onClick={() => setIsOpen(false)}
-                  className="text-white text-xl px-4 py-2 hover:text-yellow-400 transition"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
           </ul>
-        )}
+        </div>
+
       </nav>
     </header>
+    </div>
   );
 };
 
