@@ -94,7 +94,7 @@ const ProjectsSection = () => {
     <section
       id="projects"
       ref={sectionRef}
-      className="min-h-screen py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+      className="min-h-screen py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
     >
       <div className="max-w-6xl mx-auto">
         <div

@@ -29,7 +29,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative">
+    <section id="contact" className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative">
       {/* Confetti & Thank You Overlay */}
       {showThankYou && (
         <>

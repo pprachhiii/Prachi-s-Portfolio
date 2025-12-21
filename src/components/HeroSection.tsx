@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-stretch px-2 md:px-6 pt-20 pb-10 gap-0 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 text-white relative"
+      className="min-h-screen flex flex-col md:flex-row items-stretch px-2 md:px-6 pt-10 pb-10 gap-0 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 text-white relative"
     >
       {/* Left: Text Content */}
       <div className="flex-1 flex flex-col justify-center text-center md:text-left space-y-6 z-10">

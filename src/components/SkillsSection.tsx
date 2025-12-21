@@ -72,7 +72,7 @@ const SkillsSection = () => {
     <section
       id="skill"
       ref={sectionRef}
-      className="min-h-screen px-6 py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 transition-all duration-1000 text-white relative overflow-hidden"
+      className="min-h-screen px-6 py-10 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 transition-all duration-1000 text-white relative overflow-hidden"
     >
       <div className="text-center mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

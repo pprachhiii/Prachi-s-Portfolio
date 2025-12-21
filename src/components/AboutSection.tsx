@@ -12,7 +12,7 @@ const AboutSection = () => {
       id="about"
       className="min-h-screen md:h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
     >
-      <div className="relative z-10 container mx-auto px-6 pt-24">
+      <div className="relative z-10 container mx-auto px-6 pt-2">
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl p-8 md:h-[80vh] flex flex-col overflow-visible md:overflow-hidden">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text">
             About Me
