@@ -96,7 +96,7 @@ const ContactSection = () => {
                   className="flex items-center space-x-3 hover:text-yellow-300 transition-colors duration-300 group"
                 >
                   <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>GitHub – My code vault</span>
+                  <span>GitHub - My code vault</span>
                 </a>
 
                 <a 
@@ -106,7 +106,7 @@ const ContactSection = () => {
                   className="flex items-center space-x-3 hover:text-yellow-300 transition-colors duration-300 group"
                 >
                   <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>LinkedIn – Professional zone</span>
+                  <span>LinkedIn - Professional zone</span>
                 </a>
               </div>
             </div>

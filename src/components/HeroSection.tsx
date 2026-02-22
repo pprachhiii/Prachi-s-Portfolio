@@ -25,38 +25,23 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg text-blue-200 max-w-2xl">
-          Seeking internships to apply my skills, collaborate with experienced developers, and contribute to meaningful software solutions.        
+          Seeking internships to apply my skills, collaborate with experienced developers, and contribute to meaningful software solutions.
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-4 justify-center md:justify-start">
-          <a
-            href="https://drive.google.com/uc?export=download&id=1_Hvhs1a6DaCdMEkL2JTGo8t1Af0RELhz"
-            className="px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
-          >
-            Download Resume
-          </a>
-          <a 
-            href="https://drive.google.com/file/d/1_Hvhs1a6DaCdMEkL2JTGo8t1Af0RELhz/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300 w-fit"
-          >
-            View Resume
-          </a>
-        </div>
+
       </div>
 
       {/* Right: Video */}
       <div className="flex-1 flex items-end justify-center relative">
         <video
-          src="/hero-video.webm" 
+          src="/hero-video.webm"
           autoPlay
           loop
           muted
           playsInline
           className="w-[22rem] h-[36rem] object-contain "
         />
-        
+
       </div>
     </section>
   );

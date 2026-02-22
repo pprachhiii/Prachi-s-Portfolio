@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       company: 'Shreemal Technology',
       location: 'Remote',
       link: 'https://www.linkedin.com/company/shreemal-technology/',
-      duration: 'Jun 2025 – Aug 2025',
+      duration: 'Jun 2025 - Aug 2025',
       description: `Architected and deployed scalable full-stack features using Next.js 13+ with App Router and Server Actions, along with Express.js REST APIs. Managed relational databases, optimized backend performance, and deployed production-ready apps on Vercel.`,
       achievements: [
         "Optimized backend caching and rate-limiting with Upstash",
@@ -22,7 +22,7 @@ const ExperienceSection = () => {
       company: 'GetNomik',
       location: 'Remote',
       link: 'https://www.linkedin.com/company/getnomik/',
-      duration: 'Jul 2025 – Aug 2025',
+      duration: 'Jul 2025 - Aug 2025',
       description: `Developed modular and scalable backend services using Node.js and Express.js. Engineered secure infrastructure and optimized MySQL databases.`,
       achievements: [
         "Built secure JWT-based authentication and RBAC system",

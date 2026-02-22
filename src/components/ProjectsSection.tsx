@@ -39,14 +39,7 @@ const ProjectsSection = () => {
       github: "https://github.com/pprachhiii/2070",
       live: "https://2070-ten.vercel.app/",
     },
-    {
-      title: "Chat App",
-      description:
-        "Full-stack real-time chat application with JWT authentication, media sharing, online presence tracking, and cloud-based file storage. Designed with a responsive interface and scalable architecture using React, Express, and Socket.IO for instant one-to-one messaging.",
-      tech: [FaReact, SiExpress, SiSocketdotio, SiMongodb],
-      github: "https://github.com/pprachhiii/chat-app",
-      live: "https://chat-app-somd.onrender.com/login",
-    },
+   
     {
       title: "Rental Listing Platform",
       description:
@@ -72,7 +65,7 @@ const ProjectsSection = () => {
       live: "https://e-commerce-app-1-652v.onrender.com",
     },
     {
-      title: "FasalForecast – Crop Recommender",
+      title: "FasalForecast - Crop Recommender",
       description:
         "AgriTech tool that leverages weather APIs, soil data, and recommend the most suitable crops for farmers. Designed with Node.js and Express for API handling, the platform integrates data-driven insights to improve agricultural planning.",
       tech: [FaNodeJs, SiExpress, WiDayCloudy],
@@ -80,7 +73,7 @@ const ProjectsSection = () => {
       live: "https://farming-agriculture-assistant-production.up.railway.app/",
     },
     {
-      title: "Ta-Da – To-Do Web App",
+      title: "Ta-Da - To-Do Web App",
       description:
         "Lightweight yet feature-rich task manager with task CRUD, filters, and responsive layouts. Built using Express.js and EJS templating, with MongoDB for persistence and Bootstrap for quick UI design, ensuring simplicity and usability.",
       tech: [SiExpress, SiEjs, SiMongodb, FaBootstrap],
