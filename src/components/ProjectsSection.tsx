@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { FaReact, FaNodeJs, FaDatabase, FaBootstrap } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiShadcnui, SiMongodb, SiPostgresql, SiSocketdotio, SiExpress, SiTypescript, SiVite, SiPaypal, SiEjs } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiShadcnui, SiMongodb, SiPostgresql, SiSocketdotio, SiExpress, SiTypescript, SiVite, SiPaypal, SiEjs, SiPrisma } from "react-icons/si";
 import { WiDayCloudy } from "react-icons/wi"; 
 
 const ProjectsSection = () => {
@@ -32,6 +32,20 @@ const ProjectsSection = () => {
       live: "https://dhara-six.vercel.app/",
     },
     {
+  title: "Car1Pro",
+  description:
+    "A full-stack automotive e-commerce and car rental marketplace with complete customer and admin workflows. Features secure authentication, dynamic vehicle listings, advanced search and filtering, date-based rentals, and streamlined booking management. Includes a dedicated admin dashboard with full CRUD control over vehicles, orders, and users. Built with Next.js 14, TypeScript, Prisma, and Tailwind CSS. Payment gateway integration is in progress; all other features are fully dynamic and production-ready.",
+  tech: [
+    SiNextdotjs,
+    FaReact,
+    SiTypescript,
+    SiTailwindcss,
+    SiPrisma,
+    SiPostgresql
+  ],
+  github: "https://github.com/pprachhiii/car1pro",
+  live: "https://car1pro.vercel.app/",
+},{
       title: "2070 Wildlife & Environmental Dashboard",
       description:
         "An interactive React + TypeScript application for wildlife tracking, environmental monitoring, and conservation planning. Includes real-time alerts, predictive species projections, ecological simulations, and interactive maps with heatmaps, choropleths, and migration paths. Built with React, TypeScript, TailwindCSS, Leaflet, and Recharts, it demonstrates advanced data visualization, responsive design, and ecological insight for researchers and policymakers.",
