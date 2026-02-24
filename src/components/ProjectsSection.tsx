@@ -56,30 +56,9 @@ const ProjectsSection = () => {
       github: "https://github.com/pprachhiii/item-manager",
       live: "https://item-manager-cee0.onrender.com/",
     },
-    {
-      title: "Ecommerce-App",
-      description:
-        "End-to-end ecommerce solution with product catalog, secure authentication, PayPal payment integration, and live order tracking. Features admin product management, responsive layouts, and a scalable MERN stack backend for real-world use cases.",
-      tech: [SiMongodb, SiExpress, FaReact, FaNodeJs, SiPaypal],
-      github: "https://github.com/pprachhiii/MERN-ecommerce-app",
-      live: "https://e-commerce-app-1-652v.onrender.com",
-    },
-    {
-      title: "FasalForecast - Crop Recommender",
-      description:
-        "AgriTech tool that leverages weather APIs, soil data, and recommend the most suitable crops for farmers. Designed with Node.js and Express for API handling, the platform integrates data-driven insights to improve agricultural planning.",
-      tech: [FaNodeJs, SiExpress, WiDayCloudy],
-      github: "https://github.com/pprachhiii/fasalforecast",
-      live: "https://farming-agriculture-assistant-production.up.railway.app/",
-    },
-    {
-      title: "Ta-Da - To-Do Web App",
-      description:
-        "Lightweight yet feature-rich task manager with task CRUD, filters, and responsive layouts. Built using Express.js and EJS templating, with MongoDB for persistence and Bootstrap for quick UI design, ensuring simplicity and usability.",
-      tech: [SiExpress, SiEjs, SiMongodb, FaBootstrap],
-      github: "https://github.com/pprachhiii/To-Do-App",
-      live: "https://ta-da.onrender.com/",
-    },
+   ,
+    
+    
   ];
 
 
