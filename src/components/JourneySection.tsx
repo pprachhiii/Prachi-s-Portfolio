@@ -63,7 +63,7 @@ export const JourneySection = () => {
           }
         });
       },
-      { threshold: 0.3, rootMargin: '0px 0px -100px 0px' }
+      { threshold: 0.3, rootMargin: '0px 0px -100px 0px' },
     );
 
     itemRefs.current.forEach((ref) => {
@@ -84,13 +84,17 @@ export const JourneySection = () => {
   };
 
   return (
-    <section id="journey" className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900">
+    <section
+      id="journey"
+      className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">My Journey</h2>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
-            It's been a mix of bugs, breakthroughs, and late-night debugging - and somehow, it all adds up.
+            It's been a mix of bugs, breakthroughs, and late-night debugging - and somehow, it all
+            adds up.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
         </div>
@@ -108,7 +112,9 @@ export const JourneySection = () => {
               return (
                 <div
                   key={event.year}
-                  ref={(el) => { itemRefs.current[index] = el }}
+                  ref={(el) => {
+                    itemRefs.current[index] = el;
+                  }}
                   data-index={index}
                   className={`relative flex items-center ${isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'} flex-col lg:space-x-16 space-y-8 lg:space-y-0`}
                 >
@@ -162,7 +168,8 @@ export const JourneySection = () => {
         {/* Footer Note */}
         <div className="text-center mt-16">
           <p className="text-blue-300 font-mono text-sm max-w-lg mx-auto">
-            This journey continues with every project, every line of code, every bug that makes me cry and then proud.
+            This journey continues with every project, every line of code, every bug that makes me
+            cry and then proud.
           </p>
         </div>
       </div>

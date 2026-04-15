@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const HeroSection = () => {
   return (
@@ -13,22 +13,20 @@ const HeroSection = () => {
             Hello!
           </span>
           <br />
-          I'm{" "}
+          I'm{' '}
           <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
             Prachi Yadav
           </span>
-          ,<br />
-          a{" "}
+          ,<br />a{' '}
           <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
             Software Developer.
           </span>
         </h1>
 
         <p className="text-lg text-blue-200 max-w-2xl">
-          Seeking internships to apply my skills, collaborate with experienced developers, and contribute to meaningful software solutions.
+          Seeking internships to apply my skills, collaborate with experienced developers, and
+          contribute to meaningful software solutions.
         </p>
-
-
       </div>
 
       {/* Right: Video */}
@@ -41,7 +39,6 @@ const HeroSection = () => {
           playsInline
           className="w-[22rem] h-[36rem] object-contain "
         />
-
       </div>
     </section>
   );

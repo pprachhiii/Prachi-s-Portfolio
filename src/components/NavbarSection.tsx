@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 const NavbarSection = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -8,13 +8,13 @@ const NavbarSection = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/skills", label: "Skills" },
-    { path: "/projects", label: "Projects" },
-    { path: "/achievements", label: "Achievements" },
-    { path: "/experience", label: "Experience" },
-    { path: "/contact", label: "Contact" },
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/skills', label: 'Skills' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/achievements', label: 'Achievements' },
+    { path: '/experience', label: 'Experience' },
+    { path: '/contact', label: 'Contact' },
   ];
 
   if (!isDesktopVisible) {
@@ -47,8 +47,8 @@ const NavbarSection = () => {
                     to={path}
                     className={`px-3 py-1.5 rounded-full transition ${
                       isActive
-                        ? "bg-gradient-to-r from-yellow-400 to-orange-400 text-black"
-                        : "hover:bg-gradient-to-r from-yellow-400 to-orange-400"
+                        ? 'bg-gradient-to-r from-yellow-400 to-orange-400 text-black'
+                        : 'hover:bg-gradient-to-r from-yellow-400 to-orange-400'
                     }`}
                   >
                     {label}
@@ -59,18 +59,12 @@ const NavbarSection = () => {
           </ul>
 
           {/* DESKTOP CLOSE */}
-          <button
-            onClick={() => setIsDesktopVisible(false)}
-            className="hidden lg:flex"
-          >
+          <button onClick={() => setIsDesktopVisible(false)} className="hidden lg:flex">
             <X className="h-7 w-7" />
           </button>
 
           {/* MOBILE TOGGLE */}
-          <button
-            className="lg:hidden"
-            onClick={() => setIsMobileOpen(!isMobileOpen)}
-          >
+          <button className="lg:hidden" onClick={() => setIsMobileOpen(!isMobileOpen)}>
             {isMobileOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -78,7 +72,7 @@ const NavbarSection = () => {
         {/* MOBILE MENU */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            isMobileOpen ? "max-h-[500px] mt-6" : "max-h-0"
+            isMobileOpen ? 'max-h-[500px] mt-6' : 'max-h-0'
           }`}
         >
           <ul className="flex flex-col items-center gap-6 py-6">

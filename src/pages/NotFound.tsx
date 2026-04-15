@@ -1,14 +1,11 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.warn(
-      "🚨 404 Alert! Route not found:",
-      location.pathname
-    );
+    console.warn('🚨 404 Alert! Route not found:', location.pathname);
   }, [location.pathname]);
 
   return (
@@ -16,7 +13,8 @@ const NotFound = () => {
       <div className="text-center max-w-md">
         <h1 className="text-8xl font-extrabold mb-4 animate-bounce">404</h1>
         <p className="text-xl mb-6">
-          Oops! You’ve wandered into the <span className="text-pink-400 font-bold">cosmic void</span>.<br />
+          Oops! You’ve wandered into the{' '}
+          <span className="text-pink-400 font-bold">cosmic void</span>.<br />
           Nothing to see here... except maybe a lost sock or two 🧦
         </p>
         <a

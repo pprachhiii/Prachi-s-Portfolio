@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Calendar, ExternalLink, MapPin } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Calendar, ExternalLink, MapPin } from 'lucide-react';
 
 const ExperienceSection = () => {
   const internships = [
@@ -11,11 +11,20 @@ const ExperienceSection = () => {
       duration: 'Jun 2025 - Aug 2025',
       description: `Architected and deployed scalable full-stack features using Next.js 13+ with App Router and Server Actions, along with Express.js REST APIs. Managed relational databases, optimized backend performance, and deployed production-ready apps on Vercel.`,
       achievements: [
-        "Optimized backend caching and rate-limiting with Upstash",
-        "Validated APIs with Postman and ensured type-safe development",
-        "Designed API logic according to feature requirements and collaborated on frontend integration to deliver cohesive, production-ready functionality"
+        'Optimized backend caching and rate-limiting with Upstash',
+        'Validated APIs with Postman and ensured type-safe development',
+        'Designed API logic according to feature requirements and collaborated on frontend integration to deliver cohesive, production-ready functionality',
       ],
-      tech: ['Next.js 13+', 'Express.js', 'TypeScript', 'Upstash', 'Prisma', 'PostgreSQL', 'Vercel', 'Postman']
+      tech: [
+        'Next.js 13+',
+        'Express.js',
+        'TypeScript',
+        'Upstash',
+        'Prisma',
+        'PostgreSQL',
+        'Vercel',
+        'Postman',
+      ],
     },
     {
       role: 'Backend Developer',
@@ -25,16 +34,19 @@ const ExperienceSection = () => {
       duration: 'Jul 2025 - Aug 2025',
       description: `Developed modular and scalable backend services using Node.js and Express.js. Engineered secure infrastructure and optimized MySQL databases.`,
       achievements: [
-        "Built secure JWT-based authentication and RBAC system",
-        "Integrated Razorpay payments and transactional emails",
-        "Ensured smooth backend operations with MySQL optimization"
+        'Built secure JWT-based authentication and RBAC system',
+        'Integrated Razorpay payments and transactional emails',
+        'Ensured smooth backend operations with MySQL optimization',
       ],
-      tech: ['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'SMTP', 'Razorpay']
-    }
+      tech: ['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'SMTP', 'Razorpay'],
+    },
   ];
 
   return (
-    <section id="experience" className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900">
+    <section
+      id="experience"
+      className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -42,7 +54,8 @@ const ExperienceSection = () => {
             Where I’m Growing
           </h2>
           <p className="text-lg text-blue-200 max-w-3xl mx-auto font-serif">
-            Internships and work experience are bridges-helping me master real-world backend challenges.
+            Internships and work experience are bridges-helping me master real-world backend
+            challenges.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full animate-bounce" />
         </div>
@@ -53,7 +66,7 @@ const ExperienceSection = () => {
             <motion.div
               key={internship.company}
               whileHover={{ x: index % 2 === 0 ? -10 : 10 }}
-              transition={{ type: "spring", stiffness: 100 }}
+              transition={{ type: 'spring', stiffness: 100 }}
               className="flex items-start gap-8"
             >
               {/* Content */}
@@ -61,9 +74,7 @@ const ExperienceSection = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
                     {/* Position without fade */}
-                    <h3 className="text-2xl font-bold text-white mb-1">
-                      {internship.role}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-white mb-1">{internship.role}</h3>
                     <div className="flex items-center gap-4 text-blue-200 text-sm">
                       <span className="font-medium">{internship.company}</span>
                       <div className="flex items-center gap-1">
@@ -100,7 +111,10 @@ const ExperienceSection = () => {
 
                 <div className="flex flex-wrap gap-2">
                   {internship.tech.map((tech) => (
-                    <span key={tech} className="px-3 py-1 bg-yellow-300/10 text-yellow-200 rounded-full text-xs font-medium transition-all hover:bg-yellow-300/30 hover:text-white">
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-yellow-300/10 text-yellow-200 rounded-full text-xs font-medium transition-all hover:bg-yellow-300/30 hover:text-white"
+                    >
                       {tech}
                     </span>
                   ))}

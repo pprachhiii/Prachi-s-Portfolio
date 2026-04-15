@@ -1,14 +1,14 @@
-import { Routes, Route } from "react-router-dom";
-import NavbarSection from "@/components/NavbarSection";
+import { Routes, Route } from 'react-router-dom';
+import NavbarSection from '@/components/NavbarSection';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Project";
-import Contact from "./pages/Contact";
-import Experience from "./pages/Experience";
-import Achievements from "./pages/Achievement";
-import NotFound from "./pages/NotFound";
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Projects from './pages/Project';
+import Contact from './pages/Contact';
+import Experience from './pages/Experience';
+import Achievements from './pages/Achievement';
+import NotFound from './pages/NotFound';
 
 export default function App() {
   return (

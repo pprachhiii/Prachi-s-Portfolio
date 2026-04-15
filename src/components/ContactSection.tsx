@@ -29,7 +29,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative">
+    <section
+      id="contact"
+      className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative"
+    >
       {/* Confetti & Thank You Overlay */}
       {showThankYou && (
         <>
@@ -39,7 +42,8 @@ const ContactSection = () => {
               Thank You!🌸
             </h2>
             <p className="text-white text-lg text-center max-w-lg">
-              Your message has been received. I appreciate you reaching out and will get back to you soon!
+              Your message has been received. I appreciate you reaching out and will get back to you
+              soon!
             </p>
           </div>
         </>
@@ -48,9 +52,7 @@ const ContactSection = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Let's Connect
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Connect</h2>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
             Got a project, an idea, or a challenge? Let’s talk.
           </p>
@@ -69,7 +71,7 @@ const ContactSection = () => {
               </h3>
               <div className="space-y-3 text-blue-200 text-sm">
                 <p>
-                  <strong>Email:</strong>{" "}
+                  <strong>Email:</strong>{' '}
                   <a
                     href="mailto:prachiiyadav2409@gmail.com"
                     className="hover:underline transition-all duration-200"
@@ -77,19 +79,23 @@ const ContactSection = () => {
                     prachiiyadav2409@gmail.com
                   </a>
                 </p>
-                <p><strong>Response Time:</strong> Usually within 24 hours</p>
-                <p><strong>Best For:</strong> Project discussions, collabs, tech help, or just vibing</p>
+                <p>
+                  <strong>Response Time:</strong> Usually within 24 hours
+                </p>
+                <p>
+                  <strong>Best For:</strong> Project discussions, collabs, tech help, or just vibing
+                </p>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <h3 className="text-xl font-medium text-white mb-4 flex items-center gap-3">
-                <Globe size={20} className="text-yellow-400"/>
+                <Globe size={20} className="text-yellow-400" />
                 Find Me Online
               </h3>
               <div className="space-y-4 text-blue-200 text-sm">
-                <a 
+                <a
                   href="https://github.com/pprachhiii"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,7 +105,7 @@ const ContactSection = () => {
                   <span>GitHub - My code vault</span>
                 </a>
 
-                <a 
+                <a
                   href="https://www.linkedin.com/in/prachi-yadav-87303231a"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -118,34 +124,30 @@ const ContactSection = () => {
               <MessageCircle size={24} className="text-yellow-400" />
               Send a Message
             </h3>
-          
-            <form
-              method="POST"
-              className="space-y-4"
-              onSubmit={handleFormSubmit}
-            >
+
+            <form method="POST" className="space-y-4" onSubmit={handleFormSubmit}>
               <div>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="name"
                   placeholder="Your Name"
                   required
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-200 focus:outline-none focus:border-yellow-400 transition-colors"
                 />
               </div>
-              
+
               <div>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   name="email"
                   placeholder="Your Email"
                   required
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-200 focus:outline-none focus:border-yellow-400 transition-colors"
                 />
               </div>
-              
+
               <div>
-                <textarea 
+                <textarea
                   name="message"
                   rows={4}
                   placeholder="Tell me about your project or just say hi!"
@@ -153,7 +155,7 @@ const ContactSection = () => {
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-blue-200 focus:outline-none focus:border-yellow-400 transition-colors resize-none"
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
@@ -161,9 +163,7 @@ const ContactSection = () => {
                 Send
               </button>
             </form>
-          
           </div>
-          
         </div>
 
         <div className="mt-16 text-center text-sm text-blue-300 flex justify-center items-center gap-2">

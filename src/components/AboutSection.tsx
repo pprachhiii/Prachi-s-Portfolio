@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +23,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-orange-400/10 rounded-3xl transform rotate-3" />
               <div
                 className={`relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden shadow-2xl w-11/12 md:w-10/12 h-full transition-all duration-1000 delay-300 ${
-                  isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                  isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
                 }`}
               >
                 <div className="p-6 md:p-8 text-white h-full flex flex-col justify-center">
@@ -32,9 +32,7 @@ const AboutSection = () => {
                       <span className="text-white text-xl font-bold">P</span>
                     </div>
                     <h4 className="text-lg md:text-xl font-semibold mb-1">Prachi</h4>
-                    <p className="text-blue-200 text-sm md:text-base">
-                      Software Developer
-                    </p>
+                    <p className="text-blue-200 text-sm md:text-base">Software Developer</p>
                     <div className="space-y-2 text-xs md:text-sm mt-4">
                       <div className="flex justify-between text-blue-300">
                         <span>Experience:</span>
@@ -54,18 +52,19 @@ const AboutSection = () => {
             <div className="flex flex-col justify-center h-full">
               <div className="text-base md:text-lg text-blue-200 space-y-4 leading-relaxed">
                 <p>
-                  Software developer specializing in backend systems that
-                  prioritize performance, scalability, and maintainability.
-                  Strong collaborator with a focus on clean code and efficient
-                  development workflows.
+                  Full-stack developer with hands-on experience designing, building, and deploying
+                  scalable web applications using modern JavaScript frameworks, RESTful APIs, and
+                  SQL/NoSQL databases.
                 </p>
                 <p>
-                  Focussed in designing APIs, integrating services, and building
-                  robust architectures that support real-world applications.
+                  Demonstrated experience working with backend systems, containerized deployments
+                  using Docker, and CI/CD pipelines through real-world project implementation.
+                  Seeking entry-level software roles to apply technical skills and contribute to
+                  real-world systems.{' '}
                 </p>
                 <p>
-                  Beyond coding, I’m passionate about creating impactful
-                  solutions that connect people and bring ideas to life.
+                  Beyond coding, I’m passionate about creating impactful solutions that connect
+                  people and bring ideas to life.
                 </p>
               </div>
             </div>
