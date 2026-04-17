@@ -45,8 +45,6 @@ const SkillsSection = () => {
       { name: 'Docker', icon: Layers },
       { name: 'Docker Compose', icon: Layers },
       { name: 'GitHub Actions (CI/CD)', icon: GitBranch },
-      { name: 'Vercel', icon: Zap },
-      { name: 'Environment Management', icon: Zap },
     ],
 
     tools: [
@@ -65,8 +63,8 @@ const SkillsSection = () => {
     softSkills: [
       { name: 'Problem-solving', icon: Star },
       { name: 'Collaboration', icon: Star },
-      { name: 'Debugging Production Systems', icon: Star },
-      { name: 'System Design Fundamentals', icon: Star },
+      { name: 'Analytical Thinking', icon: Star },
+      { name: 'Time Management', icon: Star },
     ],
   };
 
