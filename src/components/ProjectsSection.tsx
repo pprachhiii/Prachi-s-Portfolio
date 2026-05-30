@@ -1,186 +1,594 @@
-import { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import { FaReact, FaNodeJs } from 'react-icons/fa';
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiShadcnui,
-  SiMongodb,
-  SiPostgresql,
-  SiTypescript,
-  SiVite,
-  SiPrisma,
-  SiDocker,
-  SiGithubactions,
-} from 'react-icons/si';
+import React from 'react';
 
-type TechIcon = React.ComponentType<{ className?: string }>;
+export default function Projects() {
+  return (
+    <section className="py-12 overflow-hidden">
+      {/* HEADER */}
+      <div className="px-6 md:px-24 pb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <h2 className="text-5xl md:text-7xl font-black leading-none">Projects</h2>
+      </div>
+      {/* ================================================= */}
+      {/* PROJECT 1 : CAR1PRO */}
+      {/* ================================================= */}
+      <div className="group min-h-[90vh] overflow-hidden">
+        {/* FULL WIDTH HEADER */}
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 mb-6">01 /</span>
 
-type Project = {
-  title: string;
-  description: string;
-  tech: TechIcon[];
-  github: string;
-  live: string;
-};
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-white">
+            Car1
+            <em className="italic text-cyan-600">Pro</em>
+          </h3>
 
-const ProjectsSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
+          <p className="italic text-[#c8dcbe]/50 mb-6 text-lg">
+            A production-oriented automotive marketplace built with modern full-stack architecture.
+          </p>
+        </div>
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
-      },
-      { threshold: 0.05 },
-    );
+        {/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              Car1Pro is a full-stack e-commerce platform for automotive accessories, supporting
+              product listings, user workflows, and administrative management. The application was
+              designed with production deployment in mind, incorporating containerization, CI/CD
+              automation, and database management.
+            </p>
 
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Implemented complete CRUD workflows for automotive accessories, users, orders, and
+                administrative operations.
+              </li>
+              <li>
+                • Designed database models using Prisma ORM with relational data handling and
+                type-safe queries.
+              </li>
+              <li>
+                • Automated deployment workflows using Docker and GitHub Actions for consistent
+                production builds.
+              </li>
+            </ul>
 
-  const projects: Project[] = [
-    {
-      title: 'DHARA',
-      description:
-        'A community-driven civic platform that empowers citizens to report neglected spaces, engage in community voting, and organize volunteer-driven cleanups, tree planting, and beautification drives. Features authority contact tracking, evidence-based reporting, and sustained monitoring to ensure long-term impact. Built with Next.js, TailwindCSS, ShadCN/UI, Node.js, and PostgreSQL to deliver a scalable, inclusive solution for environmental stewardship in India.',
-      tech: [SiNextdotjs, SiTailwindcss, SiShadcnui, FaNodeJs, SiPostgresql],
-      github: 'https://github.com/pprachhiii/dhara',
-      live: 'https://dhara-six.vercel.app/',
-    },
-    {
-      title: 'Car1Pro',
-      description:
-        'A full-stack automotive e-commerce and car rental marketplace with complete customer and admin workflows. Features secure authentication, dynamic vehicle listings, advanced search and filtering, date-based rentals, and streamlined booking management. Includes an admin dashboard with full CRUD operations for vehicles, users, and orders. Built with Next.js 14, TypeScript, Prisma, PostgreSQL, and Tailwind CSS. Integrated production-ready architecture with Docker containerization and CI/CD pipeline using GitHub Actions. Payment gateway integration is currently in progress; all other core features are fully dynamic and production-ready.',
-      tech: [
-        SiNextdotjs,
-        FaReact,
-        SiTypescript,
-        SiTailwindcss,
-        SiPrisma,
-        SiPostgresql,
-        SiDocker,
-        SiGithubactions,
-      ],
-      github: 'https://github.com/pprachhiii/car1pro',
-      live: 'https://car1pro.vercel.app/',
-    },
-    {
-      title: '2070 Wildlife & Environmental Dashboard',
-      description:
-        'An interactive React + TypeScript application for wildlife tracking, environmental monitoring, and conservation planning. Includes real-time alerts, predictive species projections, ecological simulations, and interactive maps with heatmaps, choropleths, and migration paths. Built with React, TypeScript, TailwindCSS, Leaflet, and Recharts.',
-      tech: [FaReact, SiTypescript, SiTailwindcss],
-      github: 'https://github.com/pprachhiii/2070',
-      live: 'https://2070-ten.vercel.app/',
-    },
-    {
-      title: 'Rental Listing Platform',
-      description:
-        'Rental marketplace featuring secure session-based authentication, advanced property search, and optimized image upload pipelines. Built with Next.js and MongoDB.',
-      tech: [FaReact, SiNextdotjs, SiMongodb, SiTailwindcss],
-      github: 'https://github.com/pprachhiii/StayEase',
-      live: 'https://stayease-smsm.onrender.com/listings',
-    },
-    {
-      title: 'Item-Manager',
-      description:
-        'Scalable CRUD web application with modular architecture and global state synchronization for consistent UI behavior across sessions.',
-      tech: [FaReact, SiTailwindcss, SiVite, FaNodeJs],
-      github: 'https://github.com/pprachhiii/item-manager',
-      live: 'https://item-manager-cee0.onrender.com/',
-    },
-  ];
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {[
+                'Next.js 14',
+                'TypeScript',
+                'Prisma',
+                'PostgreSQL',
+                'Tailwind CSS',
+                'Docker',
+                'GitHub Actions',
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-cyan-600/10 bg-cyan-600/5 text-cyan-600 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
 
-  const renderCard = (project: Project, index: number) => (
-    <div
-      key={project.title}
-      className={`transition-all duration-700 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-      style={{ transitionDelay: `${index * 200}ms` }}
-    >
-      <div className="relative overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group shadow-md">
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-pink-400 to-purple-400 opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none rounded-2xl" />
-
-        <div className="relative z-10">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-2xl font-bold text-white group-hover:text-yellow-300">
-              {project.title}
-            </h3>
-            <div className="flex gap-3">
-              <a href={project.github} className="text-blue-200 hover:text-yellow-400">
-                <Github className="w-5 h-5" />
+            {/* LINKS */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/pprachhiii/car1pro"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 bg-cyan-600/20 hover:bg-cyan-600/30 transition"
+              >
+                GitHub ↗
               </a>
-              <a href={project.live} className="text-blue-200 hover:text-yellow-400">
-                <ExternalLink className="w-5 h-5" />
+
+              <a
+                href="https://car1pro.vercel.app/"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 hover:bg-cyan-600/30 transition"
+              >
+                Live Demo ↗
               </a>
             </div>
           </div>
 
-          <p className="text-blue-100 mb-6 leading-relaxed whitespace-pre-line">
-            {project.description.split('. ').map((sentence, i, arr) => (
-              <span key={i}>
-                {sentence.trim()}
-                {i !== arr.length - 1 ? '. ' : ''}
-                {i === Math.floor(arr.length / 2) - 1 && (
-                  <>
-                    {'\n'}
-                    {'\n'}
-                  </>
-                )}
-              </span>
-            ))}
-          </p>
-
-          <div className="flex flex-wrap gap-3">
-            {project.tech.map((Icon, i) => (
-              <Icon key={i} className="w-6 h-6 text-yellow-300" />
-            ))}
+          {/* RIGHT */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/car1pro.png"
+              alt="CAR1PRO"
+              className="
+      w-[90%]
+  max-h-[700px]
+  rounded-2xl
+  shadow-2xl
+  object-contain
+  transition-transform
+  duration-500
+  group-hover:scale-[1.02]
+    "
+            />
           </div>
         </div>
       </div>
-    </div>
-  );
 
-  return (
-    <section
-      id="projects"
-      ref={sectionRef}
-      className="min-h-screen py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
-    >
-      <div className="max-w-6xl mx-auto">
-        <div
-          className={`transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">My Projects</h2>
-            <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
-              Full-stack builds focused on performance, UX, and real-world usability.
+      {/* ================================================= */}
+      {/* PROJECT 2 : DHARA */}
+      {/* ================================================= */}
+      <div className="group min-h-[90vh] overflow-hidden pt-20">
+        {/* FULL WIDTH HEADER */}
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 block mb-4">02 /</span>
+
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-cyan-600">Dhara</h3>
+
+          <p className="italic text-[#c8dcbe]/50 text-lg max-w-3xl">
+            A civic platform designed to turn community reports into actionable public
+            accountability.
+          </p>
+        </div>
+
+        {/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              DHARA is a full-stack civic engagement platform that enables citizens to report
+              infrastructure and environmental issues, track their resolution status, and
+              participate in community-driven initiatives. The platform focuses on transparent issue
+              reporting, structured workflows, and data management while maintaining a simple and
+              accessible user experience.
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* LEFT COLUMN */}
-            <div className="space-y-8">
-              {renderCard(projects[0], 0)} {/* DHARA */}
-              {renderCard(projects[4], 4)} {/* Item */}
-              {renderCard(projects[3], 3)} {/* Rental */}
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Built a structured issue lifecycle workflow with status tracking, moderation, and
+                audit visibility.
+              </li>
+              <li>
+                • Developed RESTful APIs and optimized relational database schemas for issue
+                management, reporting, and user activity.
+              </li>
+            </ul>
+
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {['Next.js', 'Node.js', 'PostgreSQL', 'Typescript', 'REST API'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-cyan-600/10 bg-cyan-600/5 text-cyan-600 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
 
-            {/* RIGHT COLUMN */}
-            <div className="space-y-8">
-              {renderCard(projects[1], 1)} {/* Car1Pro */}
-              {renderCard(projects[2], 2)} {/* 2070 */}
+            {/* LINKS */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/pprachhiii/dhara"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 bg-cyan-600/20 hover:bg-cyan-600/30 transition"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://dhara-six.vercel.app/"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 hover:bg-cyan-600/30 transition"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/dhara.png"
+              alt="DHARA"
+              className="
+      w-[90%]
+  max-h-[600px]
+  rounded-2xl
+  shadow-2xl
+  object-contain
+  transition-transform
+  duration-500
+  group-hover:scale-[1.02]
+    "
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ================================================= */}
+      {/* PROJECT 3 : ITEM-MANAGER */}
+      {/* ================================================= */}
+      <div className="group min-h-[90vh] overflow-hidden pt-10">
+        {/* FULL WIDTH HEADER */}
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 mb-6">03 /</span>
+
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-white">
+            Item-
+            <em className="italic text-cyan-600">Manager</em>
+          </h3>
+
+          <p className="italic text-[#c8dcbe]/50 mb-6 text-lg">
+            A inventory management application focused on state consistency and modular
+            architecture.
+          </p>
+        </div>
+
+        {/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              Item Manager is a CRUD-based web application built to manage inventory records through
+              a clean and maintainable architecture. The project emphasizes reusable components,
+              predictable state management, and efficient data synchronization between the frontend
+              and backend.
+            </p>
+
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Built reusable CRUD modules with centralized state handling for predictable UI
+                updates.
+              </li>
+              <li>
+                • Implemented API-driven data synchronization to maintain consistency across
+                application views.
+              </li>
+              <li>
+                • Structured the application using modular components to improve maintainability and
+                scalability.
+              </li>
+            </ul>
+
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {['React', 'Vite', 'Node.js', 'JavaScript', 'REST APIs'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-cyan-600/10 bg-cyan-600/5 text-cyan-600 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* LINKS */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/pprachhiii/item-manager"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 bg-cyan-600/20 hover:bg-cyan-600/30 transition"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://item-manager-cee0.onrender.com/"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 hover:bg-cyan-600/30 transition"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/item-manager.png"
+              alt="Item Manager"
+              className="
+      w-[90%]
+  max-h-[700px]
+  rounded-2xl
+  shadow-2xl
+  object-contain
+  transition-transform
+  duration-500
+  group-hover:scale-[1.02]
+    "
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ================================================= */}
+      {/* PROJECT 4 : 2070 Wildlife & Environmental Dashboard */}
+      {/* ================================================= */}
+      <div className="group min-h-[90vh] overflow-hidden pt-10">
+        {/* FULL WIDTH HEADER */}
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 mb-6">04 /</span>
+
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-white">
+            2070
+            <em className="italic text-cyan-600">Wildlife & Environmental Dashboard</em>
+          </h3>
+
+          <p className="italic text-[#c8dcbe]/50 mb-6 text-lg">
+            A data visualization platform for environmental monitoring and conservation analytics.
+          </p>
+        </div>
+
+        {/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              The 2070 Dashboard is an interactive environmental analytics platform that visualizes
+              wildlife and ecological datasets through maps, charts, and simulation-driven insights.
+              The project focuses heavily on frontend engineering, geospatial visualization, and
+              data-driven interfaces.
+            </p>
+
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Integrated interactive maps, heatmaps, and geospatial layers for environmental
+                data visualization.
+              </li>
+              <li>
+                • Built reusable charting and dashboard components for handling large datasets
+                efficiently.
+              </li>
+              <li>
+                • Implemented predictive visualizations and simulation interfaces using dynamic
+                state management.
+              </li>
+            </ul>
+
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {['React', 'TypeScript', 'Tailwind CSS', 'Leaflet', 'Recharts'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-cyan-600/10 bg-cyan-600/5 text-cyan-600 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* LINKS */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/pprachhiii/2070"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 bg-cyan-600/20 hover:bg-cyan-600/30 transition"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://2070-ten.vercel.app/"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 hover:bg-cyan-600/30 transition"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/2070.png"
+              alt="2070 Wildlife & Environmental Dashboard"
+              className="
+      w-[90%]
+  max-h-[700px]
+  rounded-2xl
+  shadow-2xl
+  object-contain
+  transition-transform
+  duration-500
+  group-hover:scale-[1.02]
+    "
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ================================================= */}
+      {/* PROJECT 5 : StayEase */}
+      {/* ================================================= */}
+      <div className="group min-h-[90vh] overflow-hidden pt-10">
+        {/* FULL WIDTH HEADER */}
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 mb-6">05 /</span>
+
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-white">
+            Stay
+            <em className="italic text-cyan-600">Ease</em>
+          </h3>
+
+          <p className="italic text-[#c8dcbe]/50 mb-6 text-lg">
+            A rental marketplace engineered around search, authentication, and media management.
+          </p>
+        </div>
+
+        {/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              StayEase is a full-stack rental listing platform that allows users to browse, create,
+              and manage property listings through a secure authentication workflow. The application
+              emphasizes search efficiency, session management, and optimized handling of property
+              media assets.
+            </p>
+
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Implemented secure session-based authentication and authorization workflows.
+              </li>
+              <li>
+                • Built advanced filtering and search functionality for efficient property
+                discovery.
+              </li>
+              <li>
+                • Optimized image upload and asset management pipelines for listing creation and
+                retrieval.
+              </li>
+            </ul>
+
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {['MongoDB', 'React', 'Node.js', 'JavaScript', 'Bootstrap'].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-cyan-600/10 bg-cyan-600/5 text-cyan-600 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* LINKS */}
+            <div className="flex gap-4">
+              <a
+                href="https://github.com/pprachhiii/StayEase"
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 bg-cyan-600/20 hover:bg-cyan-600/30 transition"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://stayease-smsm.onrender.com/listings/"
+                className="px-6 py-3 text-xs uppercase tracking-widest border border-cyan-600 hover:bg-cyan-600/30 transition"
+              >
+                Live Demo ↗
+              </a>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center justify-center">
+            <img
+              src="/stayease.png"
+              alt="StayEase Rental Marketplace"
+              className="
+      w-[90%]
+  max-h-[700px]
+  rounded-2xl
+  shadow-2xl
+  object-contain
+  transition-transform
+  duration-500
+  group-hover:scale-[1.02]
+    "
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* =============RESEARCH============================= */}
+      <div className="group min-h-[90vh] overflow-hidden pt-10">
+        {/* FULL WIDTH HEADER */}
+
+        <div className="px-8 md:px-24 mb-12">
+          <span className="text-[11px] tracking-[0.25em] text-[#c8dcbe]/50 mb-6">06 /</span>
+
+          <h3 className="text-3xl md:text-4xl  font-black mb-3 text-white">
+            AI Healthcare
+            <em className="italic text-yellow-400"> Research</em>
+          </h3>
+
+          <p className="italic text-[#c8dcbe]/50 mb-6 text-lg">
+            Exploring reliable RAG systems for medical coding and clinical documentation.
+          </p>
+        </div>
+
+        {/* CONTENT */}
+
+        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              This ongoing research initiative investigates how Retrieval-Augmented Generation (RAG)
+              and clinical NLP techniques can improve healthcare documentation, medical auditing,
+              and automated coding workflows. Conducted under faculty mentorship with a
+              collaborative research team, the work focuses on evaluating existing architectures,
+              identifying reliability challenges, and studying techniques that improve factual
+              grounding and reduce hallucinations in high-stakes medical environments.
+            </p>
+
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Conducted comparative analysis of research papers covering RAG architectures,
+                clinical NLP pipelines, and automated medical coding systems.
+              </li>
+
+              <li>
+                • Evaluated retrieval, chunking, reranking, and grounding strategies to understand
+                their impact on factual consistency and response quality.
+              </li>
+
+              <li>
+                • Investigated validation workflows and context-verification techniques aimed at
+                reducing hallucinations in healthcare AI systems.
+              </li>
+            </ul>
+
+            {/* TECH */}
+            <div className="flex flex-wrap gap-2 mb-10">
+              {[
+                'RAG',
+                'LLMs',
+                'Clinical NLP',
+                'Vector Search',
+                'Literature Review',
+                'Research Analysis',
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 text-[11px] rounded-full border border-yellow-400/10 bg-yellow-400/5 text-yellow-400 tracking-wider"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex flex-col justify-center gap-5">
+            <div className="border border-yellow-400/10 rounded-xl p-5 bg-yellow-400/[0.02]">
+              <div className="text-yellow-400 text-xs tracking-[0.25em] mb-2">01</div>
+              <h4 className="font-semibold mb-2 text-white">Research Paper Analysis</h4>
+              <p className="text-sm text-white/60">
+                Reviewing literature on healthcare AI, RAG systems, medical coding automation, and
+                clinical language processing.
+              </p>
+            </div>
+
+            <div className="border border-yellow-400/10 rounded-xl p-5 bg-yellow-400/[0.02]">
+              <div className="text-yellow-400 text-xs tracking-[0.25em] mb-2">02</div>
+              <h4 className="font-semibold mb-2 text-white">Identifying Limitations</h4>
+              <p className="text-sm text-white/60">
+                Studying hallucinations, retrieval failures, grounding issues, and reliability
+                challenges in existing approaches.
+              </p>
+            </div>
+
+            <div className="border border-yellow-400/10 rounded-xl p-5 bg-yellow-400/[0.02]">
+              <div className="text-yellow-400 text-xs tracking-[0.25em] mb-2">03</div>
+              <h4 className="font-semibold mb-2 text-white">Evaluation & Findings</h4>
+              <p className="text-sm text-white/60">
+                Comparing approaches and documenting observations regarding accuracy, grounding, and
+                trustworthiness.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default ProjectsSection;
+}

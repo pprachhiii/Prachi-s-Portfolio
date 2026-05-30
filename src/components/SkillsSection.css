@@ -1,0 +1,70 @@
+#skills {
+  min-height: 100vh;
+  background: var(--dark-bg);
+  color: var(--paper);
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-header {
+  margin-bottom: 5rem;
+}
+
+.skills-title {
+  font-family: var(--serif-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.skills-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.skills-subtitle {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: rgba(245, 240, 232, 0.4);
+}
+
+.skills-canvas {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+canvas#constellation {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#const-hint {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  color: rgba(200, 185, 154, 0.3);
+  text-transform: uppercase;
+  pointer-events: none;
+  text-align: center;
+}
+
+#const-label {
+  position: absolute;
+  top: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+}

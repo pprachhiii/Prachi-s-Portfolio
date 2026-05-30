@@ -5,10 +5,10 @@ import { Mail, Github, Linkedin, Heart, Coffee, MessageCircle, Globe } from 'luc
 const ContactSection = () => {
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Prevent default redirect
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
     // Send form data to Formspree via fetch
@@ -25,14 +25,11 @@ const ContactSection = () => {
     setTimeout(() => setShowThankYou(false), 5000);
 
     // Reset form
-    e.target.reset();
+    e.currentTarget.reset();
   };
 
   return (
-    <section
-      id="contact"
-      className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900 relative"
-    >
+    <section id="contact" className="py-6 px-6 relative">
       {/* Confetti & Thank You Overlay */}
       {showThankYou && (
         <>
@@ -52,11 +49,11 @@ const ContactSection = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Connect</h2>
+          <h2 className="text-5xl md:text-7xl font-black mt-3">Let's Connect</h2>
           <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
             Got a project, an idea, or a challenge? Let’s talk.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mt-6" />
         </div>
 
         {/* Contact grid */}
@@ -158,7 +155,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 text-blue-900 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
+                className="w-full bg-yellow-400 text-blue-900 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
               >
                 Send
               </button>

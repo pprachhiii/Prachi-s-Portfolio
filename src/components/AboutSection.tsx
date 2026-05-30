@@ -1,73 +1,205 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 
 const AboutSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setIsVisible(true), 200);
-  }, []);
-
   return (
     <section
       id="about"
-      className="min-h-screen md:h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+      className="
+        relative
+        overflow-hidden
+        bg-[#1f2937]
+        px-6
+        md:px-12
+        lg:px-20
+        py-12
+        text-white
+      "
     >
-      <div className="relative z-10 container mx-auto px-6 pt-2">
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl p-8 md:h-[80vh] flex flex-col overflow-visible md:overflow-hidden">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-transparent bg-clip-text">
-            About Me
+      <div
+        className="
+          max-w-7xl
+          mx-auto
+          grid
+          lg:grid-cols-[80px_1fr_280px]
+          gap-16
+          items-start
+        "
+      >
+        {/* COLUMN 1 - VERTICAL TITLE */}
+        <div
+          className="
+    hidden
+    lg:flex
+    justify-center
+    items-start
+    overflow-visible
+  "
+        >
+          <h2
+            className="
+      rotate-180
+      [writing-mode:vertical-rl]
+
+      text-yellow-400
+
+      text-[5rem]
+      leading-[0.85]
+      font-medium
+      whitespace-pre-line
+    "
+          >
+            {`ABOUT ME`}
           </h2>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-10 flex-grow items-center">
-            <div className="relative w-full h-full flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-orange-400/10 rounded-3xl transform rotate-3" />
+        {/* COLUMN 2 - CONTENT */}
+        <div>
+          <div className="space-y-7 max-w-3xl">
+            <p
+              className="
+                text-[1.02rem]
+                leading-8
+                text-blue-200
+              "
+            >
+              I recently graduated and am currently looking for opportunities where I can
+              contribute, learn, and continue growing as a software developer. I enjoy turning ideas
+              into practical solutions and building software that creates meaningful impact.
+            </p>
+
+            <p
+              className="
+                text-[1.02rem]
+                leading-8
+                text-blue-200
+              "
+            >
+              My interests span both frontend and backend development, allowing me to work across
+              the full development lifecycle. From crafting intuitive user experiences to designing
+              scalable APIs, databases, and production-ready systems, I enjoy building applications
+              that balance usability, performance, and maintainability.
+            </p>
+
+            <p
+              className="
+                text-[1.02rem]
+                leading-8
+                text-blue-200
+              "
+            >
+              Beyond development, I actively participate in hackathons, technical learning programs,
+              and collaborative research initiatives, expanding my knowledge through
+              experimentation, problem-solving, and hands-on learning.
+            </p>
+          </div>
+        </div>
+
+        {/* COLUMN 3 - STATS */}
+        <div className="lg:pt-6">
+          <div className="space-y-10">
+            <div
+              className="
+                pt-0
+              "
+            >
               <div
-                className={`relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden shadow-2xl w-11/12 md:w-10/12 h-full transition-all duration-1000 delay-300 ${
-                  isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-                }`}
+                className="
+                  text-5xl
+                  font-bold
+                  text-white
+                  leading-none
+                "
+                style={{
+                  fontFamily: 'var(--serif-display)',
+                }}
               >
-                <div className="p-6 md:p-8 text-white h-full flex flex-col justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <span className="text-white text-xl font-bold">P</span>
-                    </div>
-                    <h4 className="text-lg md:text-xl font-semibold mb-1">Prachi</h4>
-                    <p className="text-blue-200 text-sm md:text-base">Software Developer</p>
-                    <div className="space-y-2 text-xs md:text-sm mt-4">
-                      <div className="flex justify-between text-blue-300">
-                        <span>Experience:</span>
-                        <span>Growing Strong</span>
-                      </div>
-                      <div className="flex justify-between text-blue-300">
-                        <span>Specialty:</span>
-                        <span>Backend Architecture</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                2+
+              </div>
+
+              <div
+                className="
+                  mt-2
+                  text-[0.72rem]
+                  tracking-[0.18em]
+                  text-blue-300
+                "
+              >
+                PRODUCTION INTERNSHIPS
               </div>
             </div>
 
-            <div className="flex flex-col justify-center h-full">
-              <div className="text-base md:text-lg text-blue-200 space-y-4 leading-relaxed">
-                <p>
-                  Full-stack developer with hands-on experience designing, building, and deploying
-                  scalable web applications using modern JavaScript frameworks, RESTful APIs, and
-                  SQL/NoSQL databases.
-                </p>
-                <p>
-                  Demonstrated experience working with backend systems, containerized deployments
-                  using Docker, and CI/CD pipelines through real-world project implementation.
-                  Seeking entry-level software roles to apply technical skills and contribute to
-                  real-world systems.{' '}
-                </p>
-                <p>
-                  Beyond coding, I’m passionate about creating impactful solutions that connect
-                  people and bring ideas to life.
-                </p>
+            <div
+              className="
+                border-t
+                border-white/10
+                pt-5
+              "
+            >
+              <div
+                className="
+                  text-5xl
+                  font-bold
+                  text-white
+                  leading-none
+                "
+                style={{
+                  fontFamily: 'var(--serif-display)',
+                }}
+              >
+                3+
+              </div>
+
+              <div
+                className="
+                  mt-2
+                  text-[0.72rem]
+                  tracking-[0.18em]
+                  text-blue-300
+                "
+              >
+                SHIPPED PROJECTS
               </div>
             </div>
+
+            <div
+              className="
+                border-t
+                border-white/10
+                pt-5
+              "
+            >
+              <div
+                className="
+                  text-3xl
+                  font-bold
+                  text-white
+                  leading-none
+                "
+                style={{
+                  fontFamily: 'var(--serif-display)',
+                }}
+              >
+                PERN & MERN
+              </div>
+
+              <div
+                className="
+                  mt-2
+                  text-[0.72rem]
+                  tracking-[0.18em]
+                  text-blue-300
+                "
+              >
+                CORE STACK
+              </div>
+            </div>
+            <div
+              className="
+                border-t
+                border-white/10
+                pt-5
+              "
+            ></div>
           </div>
         </div>
       </div>

@@ -1,131 +1,244 @@
-import { motion } from 'framer-motion';
-import { Calendar, ExternalLink, MapPin } from 'lucide-react';
+'use client';
 
-const ExperienceSection = () => {
-  const internships = [
-    {
-      role: 'Full-Stack Developer Intern',
-      company: 'Shreemal Technology',
-      location: 'Remote',
-      link: 'https://www.linkedin.com/company/shreemal-technology/',
-      duration: 'Jun 2025 - Aug 2025',
-      description: `Architected and deployed scalable full-stack features using Next.js 13+ with App Router and Server Actions, along with Express.js REST APIs. Managed relational databases, optimized backend performance, and deployed production-ready apps on Vercel.`,
-      achievements: [
-        'Optimized backend caching and rate-limiting with Upstash',
-        'Validated APIs with Postman and ensured type-safe development',
-        'Designed API logic according to feature requirements and collaborated on frontend integration to deliver cohesive, production-ready functionality',
-      ],
-      tech: [
-        'Next.js 13+',
-        'Express.js',
-        'TypeScript',
-        'Upstash',
-        'Prisma',
-        'PostgreSQL',
-        'Vercel',
-        'Postman',
-      ],
-    },
-    {
-      role: 'Backend Developer',
-      company: 'GetNomik',
-      location: 'Remote',
-      link: 'https://www.linkedin.com/company/getnomik/',
-      duration: 'Jul 2025 - Aug 2025',
-      description: `Developed modular and scalable backend services using Node.js and Express.js. Engineered secure infrastructure and optimized MySQL databases.`,
-      achievements: [
-        'Built secure JWT-based authentication and RBAC system',
-        'Integrated Razorpay payments and transactional emails',
-        'Ensured smooth backend operations with MySQL optimization',
-      ],
-      tech: ['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'SMTP', 'Razorpay'],
-    },
-  ];
-
+export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="py-10 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
+      className="min-h-screen relative overflow-hidden px-24 py-6"
+      style={{
+        background: 'var(--cream)',
+      }}
     >
-      <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 animate-pulse">
-            Where I’m Growing
-          </h2>
-          <p className="text-lg text-blue-200 max-w-3xl mx-auto font-serif">
-            Internships and work experience are bridges-helping me master real-world backend
-            challenges.
+      {/* Header */}
+
+      <div className="flex items-end gap-8 mb-20">
+        <h2
+          className="font-black leading-none"
+          style={{
+            fontFamily: 'var(--serif-display)',
+            fontSize: 'clamp(2rem,5vw,4rem)',
+          }}
+        >
+          Work <em style={{ color: 'var(--rust)' }}>Experience</em>
+        </h2>
+      </div>
+
+      {/* Timeline */}
+
+      <div className="relative grid grid-cols-2 gap-12 mt-16">
+        {/* Timeline Line */}
+
+        <div className="absolute top-0 left-0 right-0 h-[2px] z-0 bg-yellow-400" />
+
+        {/* ========================================= */}
+        {/* SHREEMAL */}
+        {/* ========================================= */}
+
+        <div className="relative pt-16 pr-4 opacity-100 translate-y-0 transition-all duration-700">
+          <div className="absolute top-[-6px] left-0 w-4 h-4 rounded-full z-10 bg-yellow-600" />
+
+          <div
+            className="mb-4 text-[0.65rem] tracking-[0.15em] text-yellow-400"
+            style={{
+              fontFamily: 'var(--mono)',
+            }}
+          >
+            Jun–Aug 2025
+          </div>
+
+          <h3
+            className="text-[1.8rem] leading-[1.1] mb-2"
+            style={{
+              fontFamily: 'var(--serif-display)',
+            }}
+          >
+            Full-Stack Intern -{' '}
+            <em>
+              <a
+                href="https://www.linkedin.com/company/shreemal-technology/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-yellow-400 underline"
+              >
+                Shreemal Technology
+              </a>
+            </em>
+          </h3>
+
+          <div
+            className="mb-4 text-[0.72rem] tracking-[0.08em]"
+            style={{
+              fontFamily: 'var(--mono)',
+              color: 'var(--muted)',
+            }}
+          >
+            Remote{' '}
+            <span
+              className="inline-block rounded-full px-3 py-1"
+              style={{
+                fontSize: '0.58rem',
+                border: '1px solid rgba(0,0,0,0.08)',
+                background: 'rgba(255,255,255,0.45)',
+                backdropFilter: 'blur(6px)',
+                opacity: 0.8,
+                fontFamily: 'var(--mono)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                color: 'var(--sage)',
+              }}
+            >
+              Internship
+            </span>
+          </div>
+
+          <p
+            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
+            style={{
+              fontFamily: 'var(--sans)',
+              color: 'var(--ink)',
+            }}
+          >
+            Architected and deployed scalable full-stack features using Next.js, Server Actions, and
+            Express.js REST APIs. Worked across backend logic, API design, and frontend integration
+            to deliver production-ready features. Improved backend performance and system
+            reliability through structured optimization practices.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6 rounded-full animate-bounce" />
+
+          <div className="mt-4">
+            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
+              <li>• Optimized backend caching and rate-limiting using Upstash</li>
+              <li>• Validated APIs using Postman for production-grade reliability</li>
+              <li>• Collaborated on full-stack feature delivery from API to UI integration</li>
+            </ul>
+          </div>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            {[
+              'Next.js 13+',
+              'Express.js',
+              'TypeScript',
+              'PostgreSQL',
+              'Prisma',
+              'Upstash',
+              'Vercel',
+              'Postman',
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full px-3 py-1"
+                style={{
+                  fontSize: '0.72rem',
+                  border: '1px solid rgba(0,0,0,0.08)',
+                  background: 'rgba(255,255,255,0.45)',
+                  backdropFilter: 'blur(6px)',
+                  opacity: 0.8,
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
 
-        {/* Experience Cards */}
-        <div className="space-y-12">
-          {internships.map((internship, index) => (
-            <motion.div
-              key={internship.company}
-              whileHover={{ x: index % 2 === 0 ? -10 : 10 }}
-              transition={{ type: 'spring', stiffness: 100 }}
-              className="flex items-start gap-8"
+        {/* ========================================= */}
+        {/* GETNOMIK */}
+        {/* ========================================= */}
+
+        <div className="relative pt-16 pr-4 opacity-100 translate-y-0 transition-all duration-700">
+          <div className="absolute top-[-6px] left-0 w-4 h-4 rounded-full z-10 bg-yellow-600" />
+          <div
+            className="mb-4 text-[0.65rem] tracking-[0.15em] text-yellow-400"
+            style={{
+              fontFamily: 'var(--mono)',
+            }}
+          >
+            Jul–Aug 2025
+          </div>
+
+          <h3
+            className="text-[1.8rem] leading-[1.1] mb-2"
+            style={{
+              fontFamily: 'var(--serif-display)',
+            }}
+          >
+            Backend Developer -{' '}
+            <em>
+              <a
+                href="https://www.linkedin.com/company/getnomik/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-yellow-400 underline"
+              >
+                GetNomik
+              </a>
+            </em>
+          </h3>
+
+          <div
+            className="mb-4 text-[0.72rem] tracking-[0.08em]"
+            style={{
+              fontFamily: 'var(--mono)',
+              color: 'var(--muted)',
+            }}
+          >
+            Remote{' '}
+            <span
+              className="inline-block rounded-full px-3 py-1"
+              style={{
+                fontSize: '0.58rem',
+                border: '1px solid rgba(0,0,0,0.08)',
+                background: 'rgba(255,255,255,0.45)',
+                backdropFilter: 'blur(6px)',
+                opacity: 0.8,
+                fontFamily: 'var(--mono)',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                color: 'var(--sage)',
+              }}
             >
-              {/* Content */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 flex-1 shadow-lg">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    {/* Position without fade */}
-                    <h3 className="text-2xl font-bold text-white mb-1">{internship.role}</h3>
-                    <div className="flex items-center gap-4 text-blue-200 text-sm">
-                      <span className="font-medium">{internship.company}</span>
-                      <div className="flex items-center gap-1">
-                        <MapPin size={14} />
-                        <span>{internship.location}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-1 text-sm text-blue-300 mt-2 md:mt-0">
-                    <Calendar size={14} />
-                    <span>{internship.duration}</span>
-                    <a
-                      href={internship.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ml-4 text-blue-200 hover:text-yellow-400 transition-colors"
-                      title={`View ${internship.company} on LinkedIn`}
-                    >
-                      <ExternalLink size={16} />
-                    </a>
-                  </div>
-                </div>
+              Internship
+            </span>
+          </div>
 
-                <p className="text-blue-100 leading-relaxed mb-4">{internship.description}</p>
+          <p
+            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
+            style={{
+              fontFamily: 'var(--sans)',
+              color: 'var(--ink)',
+            }}
+          >
+            Built modular backend services using Node.js and Express.js with a focus on scalability,
+            security, and maintainability. Designed authentication flows, payment integrations, and
+            optimized database operations for efficient transactional workflows.
+          </p>
 
-                <div className="space-y-2 mb-4">
-                  {internship.achievements.map((achievement, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-yellow-300 rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-blue-200 text-sm leading-relaxed">{achievement}</span>
-                    </div>
-                  ))}
-                </div>
+          <div className="mt-4">
+            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
+              <li>• Implemented JWT-based authentication with RBAC authorization</li>
+              <li>• Integrated Razorpay for secure payment processing workflows</li>
+              <li>• Optimized MySQL queries for improved backend performance</li>
+            </ul>
+          </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {internship.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-yellow-300/10 text-yellow-200 rounded-full text-xs font-medium transition-all hover:bg-yellow-300/30 hover:text-white"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+          <div className="mt-5 flex flex-wrap gap-2">
+            {['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'Razorpay', 'SMTP'].map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full px-3 py-1"
+                style={{
+                  fontSize: '0.72rem',
+                  border: '1px solid rgba(0,0,0,0.08)',
+                  background: 'rgba(255,255,255,0.45)',
+                  backdropFilter: 'blur(6px)',
+                  opacity: 0.8,
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default ExperienceSection;
+}

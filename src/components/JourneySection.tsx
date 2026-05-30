@@ -88,6 +88,73 @@ export const JourneySection = () => {
       id="journey"
       className="py-20 px-6 bg-gradient-to-br from-slate-800 via-blue-900 to-indigo-900"
     >
+      {/* STACKED PHOTOS */}
+      <div className="relative h-[450px] hidden md:block">
+        <div
+          className="
+              absolute
+              left-[15%]
+              w-64
+              h-80
+              rounded-3xl
+              bg-white/10
+              border border-white/10
+              rotate-[-12deg]
+              overflow-hidden
+            "
+        >
+          <img src="/card1.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
+
+        <div
+          className="
+              absolute
+              left-[28%]
+              w-64
+              h-80
+              rounded-3xl
+              bg-white/10
+              border border-white/10
+              rotate-[-6deg]
+              overflow-hidden
+            "
+        >
+          <img src="/card2.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
+
+        <div
+          className="
+              absolute
+              left-[41%]
+              w-64
+              h-80
+              rounded-3xl
+              bg-white/10
+              border border-white/10
+              rotate-[2deg]
+              overflow-hidden
+            "
+        >
+          <img src="/card3.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
+
+        <div
+          className="
+              absolute
+              left-[54%]
+              w-64
+              h-80
+              rounded-3xl
+              bg-white/10
+              border border-white/10
+              rotate-[8deg]
+              overflow-hidden
+            "
+        >
+          <img src="/card4.jpg" alt="" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -96,7 +163,7 @@ export const JourneySection = () => {
             It's been a mix of bugs, breakthroughs, and late-night debugging - and somehow, it all
             adds up.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 mx-auto mt-6" />
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mt-6" />
         </div>
 
         {/* Timeline */}
