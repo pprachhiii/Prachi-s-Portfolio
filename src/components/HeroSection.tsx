@@ -3,9 +3,9 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section
-      id="home"
-      className="min-h-screen flex flex-col md:flex-row items-stretch px-12 md:px-24 pt-2 pb-10 gap-0 bg-[#1f2937] text-white relative"
-    >
+  id="home"
+  className="min-h-screen flex flex-col md:flex-row items-stretch px-12 md:px-24 pt-24 pb-10 gap-0 bg-[#1f2937] text-white relative"
+>
       {/* Left: Text Content */}
       <div className="flex-1 flex flex-col justify-center text-center md:text-left space-y-6 z-10">
         <h1 className="text-6xl md:text-5xl font-bold leading-snug">

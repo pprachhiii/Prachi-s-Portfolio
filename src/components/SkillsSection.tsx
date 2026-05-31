@@ -46,10 +46,19 @@ const SkillsSection = () => {
   return (
     <section id="skills" ref={sectionRef} className={isVisible ? 'visible' : ''}>
       <div className="skills-header reveal">
-        <h2 className="skills-title">
-          Tools & <em>Technologies</em>
-        </h2>
-      </div>
+  
+  {/* MOBILE */}
+  <h2 className="block lg:hidden text-[3rem] text-center font-semibold text-white tracking-[0.2em] mb-6">
+    Tools & <br />
+    <em>Technologies</em>
+  </h2>
+
+  {/* LAPTOP */}
+  <h2 className="hidden lg:block text-[4rem] text-left font-semibold text-white tracking-[0.2em] mb-6">
+    Tools & <em>Technologies</em>
+  </h2>
+
+</div>
 
       <div className="skills-canvas">
         <canvas ref={canvasRef} id="constellation" />

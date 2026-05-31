@@ -4,7 +4,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="min-h-screen relative overflow-hidden px-24 py-6"
+      className="min-h-screen relative overflow-hidden px-4 md:px-24 py-6"
       style={{
         background: 'var(--cream)',
       }}
@@ -25,17 +25,17 @@ export default function ExperienceSection() {
 
       {/* Timeline */}
 
-      <div className="relative grid grid-cols-2 gap-12 mt-16">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
         {/* Timeline Line */}
 
-        <div className="absolute top-0 left-0 right-0 h-[2px] z-0 bg-yellow-400" />
+        <div className="absolute md:top-0 md:left-0 md:right-0 md:h-[2px] md:w-auto top-0 left-6 bottom-0 w-[2px] md:block bg-yellow-400" />
 
         {/* ========================================= */}
         {/* SHREEMAL */}
         {/* ========================================= */}
 
-        <div className="relative pt-16 pr-4 opacity-100 translate-y-0 transition-all duration-700">
-          <div className="absolute top-[-6px] left-0 w-4 h-4 rounded-full z-10 bg-yellow-600" />
+        <div className="relative pt-16 pl-14 pr-4 md:pl-0 opacity-100 translate-y-0 transition-all duration-700">
+          <div className="absolute top-[-6px] left-4 w-4 h-4 rounded-full z-10 bg-yellow-600" />
 
           <div
             className="mb-4 text-[0.65rem] tracking-[0.15em] text-yellow-400"
@@ -55,7 +55,7 @@ export default function ExperienceSection() {
             Full-Stack Intern -{' '}
             <em>
               <a
-                href="https://www.linkedin.com/company/shreemal-technology/"
+                href="https://drive.google.com/file/d/17TLtzdDpjwcLY7kdwVcebjH1Adz27El6/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="text-yellow-400 underline"
@@ -144,8 +144,8 @@ export default function ExperienceSection() {
         {/* GETNOMIK */}
         {/* ========================================= */}
 
-        <div className="relative pt-16 pr-4 opacity-100 translate-y-0 transition-all duration-700">
-          <div className="absolute top-[-6px] left-0 w-4 h-4 rounded-full z-10 bg-yellow-600" />
+        <div className="relative pt-16 pl-14 pr-4 md:pl-0 opacity-100 translate-y-0 transition-all duration-700">
+          <div className="absolute top-[-6px] left-4 w-4 h-4 rounded-full z-10 bg-yellow-600" />
           <div
             className="mb-4 text-[0.65rem] tracking-[0.15em] text-yellow-400"
             style={{
@@ -164,7 +164,7 @@ export default function ExperienceSection() {
             Backend Developer -{' '}
             <em>
               <a
-                href="https://www.linkedin.com/company/getnomik/"
+                href="https://drive.google.com/file/d/1pwrkcc7H7bQj1h1Hj5DPLXIAasTpfmjQ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="text-yellow-400 underline"

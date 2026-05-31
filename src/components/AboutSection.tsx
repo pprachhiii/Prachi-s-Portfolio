@@ -54,6 +54,10 @@ const AboutSection = () => {
 
         {/* COLUMN 2 - CONTENT */}
         <div>
+          <h2 className="lg:hidden text-[5rem] text-center font-semibold text-yellow-400 tracking-[0.2em] mb-6">
+  ABOUT ME
+</h2>
+
           <div className="space-y-7 max-w-3xl">
             <p
               className="

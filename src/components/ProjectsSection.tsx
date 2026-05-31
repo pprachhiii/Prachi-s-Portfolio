@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
@@ -92,12 +92,13 @@ export default function Projects() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:justify-center w-full">
             <img
               src="/car1pro.png"
               alt="CAR1PRO"
               className="
       w-[90%]
+  mx-auto
   max-h-[700px]
   rounded-2xl
   shadow-2xl
@@ -105,7 +106,7 @@ export default function Projects() {
   transition-transform
   duration-500
   group-hover:scale-[1.02]
-    "
+"
             />
           </div>
         </div>
@@ -128,7 +129,7 @@ export default function Projects() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
@@ -183,20 +184,21 @@ export default function Projects() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:justify-center w-full">
             <img
               src="/dhara.png"
               alt="DHARA"
               className="
       w-[90%]
-  max-h-[600px]
+  mx-auto
+  max-h-[700px]
   rounded-2xl
   shadow-2xl
   object-contain
   transition-transform
   duration-500
   group-hover:scale-[1.02]
-    "
+"
             />
           </div>
         </div>
@@ -222,7 +224,7 @@ export default function Projects() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
@@ -280,12 +282,13 @@ export default function Projects() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:justify-center w-full">
             <img
               src="/item-manager.png"
               alt="Item Manager"
               className="
       w-[90%]
+  mx-auto
   max-h-[700px]
   rounded-2xl
   shadow-2xl
@@ -293,7 +296,7 @@ export default function Projects() {
   transition-transform
   duration-500
   group-hover:scale-[1.02]
-    "
+"
             />
           </div>
         </div>
@@ -318,7 +321,7 @@ export default function Projects() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
@@ -376,12 +379,13 @@ export default function Projects() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:justify-center w-full">
             <img
               src="/2070.png"
               alt="2070 Wildlife & Environmental Dashboard"
               className="
       w-[90%]
+  mx-auto
   max-h-[700px]
   rounded-2xl
   shadow-2xl
@@ -389,7 +393,7 @@ export default function Projects() {
   transition-transform
   duration-500
   group-hover:scale-[1.02]
-    "
+"
             />
           </div>
         </div>
@@ -414,7 +418,7 @@ export default function Projects() {
         </div>
 
         {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
@@ -471,12 +475,13 @@ export default function Projects() {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center md:justify-center w-full">
             <img
               src="/stayease.png"
               alt="StayEase Rental Marketplace"
               className="
       w-[90%]
+  mx-auto
   max-h-[700px]
   rounded-2xl
   shadow-2xl
@@ -484,7 +489,7 @@ export default function Projects() {
   transition-transform
   duration-500
   group-hover:scale-[1.02]
-    "
+"
             />
           </div>
         </div>
@@ -509,7 +514,7 @@ export default function Projects() {
 
         {/* CONTENT */}
 
-        <div className="grid md:grid-cols-[60%_40%] gap-2 px-8 md:px-24">
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
           {/* LEFT */}
           <div className="flex flex-col justify-center">
             <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">

@@ -1,37 +1,85 @@
 import { motion } from 'framer-motion';
-import { Calendar, Trophy, BookOpen, Github } from 'lucide-react';
+import { Calendar, Trophy, BookOpen, Link } from 'lucide-react';
 
 const activities = [
   {
-    title: 'HackWave Winner',
-    org: 'HackWave Hackathon',
+    title: '1st Runner-Up',
+    org: 'HackWavl Hackathon',
     date: 'Feb 2026',
-    description:
-      'Led development of Voltonic and secured 1st place through rapid prototyping, collaborative problem solving, and efficient feature prioritization.',
-    github: 'https://github.com/pprachhiii/Voltonic',
+    type: 'certificate',
+    description:'Participated in the 8-hour HackWavl Hackathon under SMSOTSAV at SMS Lucknow and secured 2nd Runner-Up position. Led a 4-member team to build a campus energy monitoring and optimization system focused on real-time tracking and efficiency improvement.',
+    link: 'https://drive.google.com/file/d/15Wu4J7wxHA40EdOKDh9KWhUELbfoQKJS/view?usp=sharing',
   },
-  {
-    title: 'SIH Internal Round Qualifier',
-    org: 'Smart India Hackathon',
-    date: '2025',
-    description:
-      'Selected through institutional evaluation for proposing SynCode AI, an AI-powered medical coding and healthcare audit automation platform.',
-    github: 'https://github.com/pprachhiii/syncode-AI',
-  },
+  
   {
     title: 'Arcade Participant',
     org: 'Google Cloud Skills Boost',
     date: 'Apr 2025 – Jun 2025',
+    type: 'certificate',
     description:
-      'Completed multiple cloud labs and hands-on challenges covering cloud infrastructure, deployment workflows, networking, and Google Cloud services.',
+    'Completed the Google Cloud Skills Boost Arcade program, achieved the Arcade Trooper tier through hands-on cloud labs and challenges, and received official Google Cloud swag rewards.'
   },
   {
+  title: 'Samsung Innovation Campus (C&P Track)',
+  org: 'Samsung Innovation Campus',
+  date: 'Aug 2025- Sep 2025',
+  type: 'certificate',
+  description:
+    'Completed SIC training in Coding & Programming (C&P), covering programming fundamentals and problem solving. Led a 6-member team during the final 3-day hackathon, contributing across frontend, backend, and database development.',
+  link: 'https://drive.google.com/file/d/1FxYIMvyRpeUpzrcG3vrafIYxBYX1C-Uj/view?usp=sharing',
+},{
     title: 'ML Cohort Trainee',
     org: 'Girls Leading Tech',
     date: 'Jul 2025 – Aug 2025',
-    description:
-      'Participated in an intensive machine learning apprenticeship focused on Python, model development, AI workflows, and collaborative project building.',
+    type: 'certificate',
+  description:
+    'Completed a 4-week ML cohort by Girls Leading Tech focused on machine learning, AI development, mentorship sessions, weekly assignments, and hands-on projects.',
+    link: 'https://drive.google.com/file/d/1wDMX8CtoFmpj-BIQmTS6fcK6RylyB7LD/view?usp=sharing',
   },
+  {
+    title: 'TechX26 Hackathon',
+    org: 'GDG Lucknow',
+    date: 'Feb 2026',
+    type: 'certificate',
+    description:
+      'Participated in the 2-day TechX26 Hackathon organized by GDG Lucknow. Worked in a 4-member team, contributing mainly to frontend development.',
+    link: 'https://drive.google.com/file/d/1Zx6-mluSxPxn9o_omgQDLXmjJqPWn1uD/view?usp=sharing',
+  },
+{
+  title: 'DevFest 2025',
+  org: 'Google Developer Group (GDG) Lucknow',
+  date: 'Nov 2025',
+  type: 'tech fest',
+  description:
+    'Participated in DevFest 2025 by GDG Lucknow, attending workshops on cloud computing, Kubernetes, UI/UX, and product development while networking with industry mentors and developers.'
+},
+  {
+    title: 'SIH Internal Round Qualifier',
+    org: 'Smart India Hackathon',
+    date: 'Aug 2025',
+    type: 'project',
+    description:
+    'Qualified for SIH Internal Round with a 4-member team by proposing SynCode AI, an AI-powered medical coding and healthcare audit platform. Contributed to UI design, frontend, database, and authentication development.'
+  },
+ {
+    title: 'AWS Club Activity',
+    org: 'AWS Student Club',
+    date: 'Nov 2023',
+    type: 'certificate',
+    description:
+      'Participated in AWS cloud sessions and workshops covering cloud fundamentals, deployment concepts, and architecture basics.',
+    link: 'https://drive.google.com/file/d/1neoa7rlXGOnIDJssXwjPGnMl8Rr36S-l/view?usp=sharing',
+  },
+  {
+    title: 'Math Quiz Competition',
+    org: 'University Event',
+    date: 'Dec 2023',
+    type: 'certificate',
+    description:
+      'Participated in a university-level mathematics quiz competition testing mathematical sills and general knowledge',
+    link: 'https://drive.google.com/file/d/1e4LveRq-j1lbdhWl496RVP4ExGaekrmg/view?usp=sharing',
+  },
+    
 ];
 
 export default function ActivitiesSection() {
@@ -72,26 +120,26 @@ export default function ActivitiesSection() {
 
               <p className="text-gray-300 text-sm leading-7 flex-grow">{item.description}</p>
 
-              {item.github && (
-                <a
-                  href={item.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="
-                mt-6
-                text-xs
-                uppercase
-                tracking-[0.15em]
-                border-t
-                border-white/10
-                pt-4
-                hover:text-[#b85c38]
-                transition-colors
-              "
-                >
-                  View Project ↗
-                </a>
-              )}
+              {item.link && (
+  <a
+    href={item.link}
+    target="_blank"
+    rel="noreferrer"
+    className="
+      mt-6
+      text-xs
+      uppercase
+      tracking-[0.15em]
+      border-t
+      border-white/10
+      pt-4
+      hover:text-[#b85c38]
+      transition-colors
+    "
+  >
+    {item.type === 'certificate' ? 'View Certificate ↗' : 'View Project ↗'}
+  </a>
+)}
             </motion.div>
           ))}
         </div>

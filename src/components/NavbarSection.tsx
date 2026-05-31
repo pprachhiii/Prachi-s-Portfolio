@@ -50,8 +50,8 @@ const NavbarSection = () => {
     backdrop-blur-md
   "
     >
-      <nav className="max-w-7xl mx-auto px-8 py-5">
-        <div className="grid grid-cols-3 items-center">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-8 py-5">
+        <div className="flex items-center justify-between">
           {/* LEFT - LOGO */}
           <div className="flex justify-start">
             <a
@@ -158,12 +158,14 @@ const NavbarSection = () => {
 
           {/* MOBILE TOGGLE */}
           <button
-            className="
-              lg:hidden
-              flex
-              justify-end
-              text-[#f5f1ea]
-            "
+  className="
+    lg:hidden
+    flex
+    items-center
+    justify-end
+    ml-auto
+    text-[#f5f1ea]
+  "
             onClick={() => setIsMobileOpen(!isMobileOpen)}
           >
             {isMobileOpen ? <X /> : <Menu />}

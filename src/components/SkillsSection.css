@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: var(--dark-bg);
   color: var(--paper);
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   position: relative;
   overflow: hidden;
 }
@@ -67,4 +67,15 @@ canvas#constellation {
   pointer-events: none;
   text-align: center;
   white-space: nowrap;
+}
+
+@media (max-width: 780px) {
+  .skills-canvas {
+    height: 1500px;
+  }
+}
+@media (max-width: 768px) {
+  #skills {
+    padding: 2rem 1.5rem;
+  }
 }

@@ -86,9 +86,12 @@ export function initializeConstellation({ canvas, label, hint }: ConstellationOp
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
 
+const isMobile = width < 768;
     ctx.clearRect(0, 0, width, height);
 
-    CATEGORIES.forEach((cat, index) => {
+    
+    if (!isMobile) {
+  CATEGORIES.forEach((cat, index) => {
       const hubX = cat.x * width + Math.sin(t * 0.4 + index) * 5;
 
       const hubY = cat.y * height + Math.cos(t * 0.3 + index) * 5;
@@ -132,11 +135,74 @@ export function initializeConstellation({ canvas, label, hint }: ConstellationOp
       ctx.fillText(cat.label.toUpperCase(), hubX, hubY + 32);
     });
 
-    t += 0.01;
+}else {
+  
+  const blockHeight = height / CATEGORIES.length;
 
-    animationFrame = requestAnimationFrame(draw);
-  };
+  const baseRadius = Math.min(width, blockHeight) * 0.35;
 
+  CATEGORIES.forEach((cat, index) => {
+    // each category gets its own vertical section
+    const gap=40;
+    const sectionTop = index * (blockHeight + gap);
+        const sectionCenterY = sectionTop + blockHeight / 2;
+
+    const hubX = width / 2;
+    const hubY = sectionCenterY;
+
+    // rotating hub (same animation feel)
+    const animatedHubX = hubX + Math.sin(t * 0.4 + index) * 4;
+    const animatedHubY = hubY + Math.cos(t * 0.3 + index) * 4;
+
+    // draw hub
+    ctx.beginPath();
+    ctx.arc(animatedHubX, animatedHubY, 10, 0, Math.PI * 2);
+    ctx.fillStyle = cat.col;
+    ctx.fill();
+
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 12px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText(cat.label.toUpperCase(), animatedHubX, animatedHubY + 25);
+
+    // SAME circular constellation logic (just scaled down)
+    cat.skills.forEach((skill, skillIndex) => {
+    const angle =
+  (Math.PI * 2 * skillIndex) / cat.skills.length + t * 1.2;
+
+      const spread = isMobile ? 1.1 : 1;
+
+const skillX =
+  animatedHubX + Math.cos(angle) * baseRadius * spread;
+
+const skillY =
+  animatedHubY + Math.sin(angle) * baseRadius * spread;
+      // connection line
+      ctx.beginPath();
+      ctx.moveTo(animatedHubX, animatedHubY);
+      ctx.lineTo(skillX, skillY);
+      ctx.strokeStyle = isMobile
+  ? 'rgba(255,255,255,0.25)'
+  : 'rgba(255,255,255,0.15)';
+      ctx.stroke();
+
+      // node
+      ctx.beginPath();
+      ctx.arc(skillX, skillY, 3, 0, Math.PI * 2);
+      ctx.fillStyle = cat.col;
+      ctx.fill();
+
+      // label
+      ctx.fillStyle = '#f5f0e8';
+      ctx.font = '10px monospace';
+      ctx.textAlign = 'left';
+      ctx.fillText(skill, skillX + 8, skillY + 3);
+    });
+  });
+}
+  t += 0.01;
+  animationFrame = requestAnimationFrame(draw);
+}   
   resizeCanvas();
   draw();
 
@@ -147,4 +213,4 @@ export function initializeConstellation({ canvas, label, hint }: ConstellationOp
 
     window.removeEventListener('resize', resizeCanvas);
   };
-}
+  }
