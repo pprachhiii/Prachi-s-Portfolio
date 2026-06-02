@@ -70,16 +70,7 @@ const activities = [
       'Participated in AWS cloud sessions and workshops covering cloud fundamentals, deployment concepts, and architecture basics.',
     link: 'https://drive.google.com/file/d/1neoa7rlXGOnIDJssXwjPGnMl8Rr36S-l/view?usp=sharing',
   },
-  {
-    title: 'Math Quiz Competition',
-    org: 'University Event',
-    date: 'Dec 2023',
-    type: 'certificate',
-    description:
-      'Participated in a university-level mathematics quiz competition testing mathematical sills and general knowledge',
-    link: 'https://drive.google.com/file/d/1e4LveRq-j1lbdhWl496RVP4ExGaekrmg/view?usp=sharing',
-  },
-    
+  
 ];
 
 export default function ActivitiesSection() {
