@@ -54,7 +54,7 @@ const AboutSection = () => {
         </div>
 
         {/* COLUMN 2 - CONTENT */}
-<div className="order-3 lg:order-2">
+<div className="hidden lg:block lg:pt-6">
           <h2
   className="lg:hidden text-center text-yellow-400 tracking-[0.2em] mb-6"
   style={{
