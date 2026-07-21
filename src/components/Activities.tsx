@@ -77,8 +77,6 @@ export default function ActivitiesSection() {
       {/* HEADER */}{' '}
       <div className="px-8 md:px-24 mb-16">
         <h2           className="
-      rotate-180
-      [writing-mode:vertical-rl]
 
       text-yellow-400
       leading-[0.85]
