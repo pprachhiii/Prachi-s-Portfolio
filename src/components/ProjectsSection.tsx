@@ -25,33 +25,7 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* CONTENT */}
-        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
-          {/* LEFT */}
-          <div className="flex flex-col justify-center">
-            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-              Car1Pro is a full-stack e-commerce platform for automotive accessories, supporting
-              product listings, user workflows, and administrative management. The application was
-              designed with production deployment in mind, incorporating containerization, CI/CD
-              automation, and database management.
-            </p>
-
-            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
-              <li>
-                • Implemented complete CRUD workflows for automotive accessories, users, orders, and
-                administrative operations.
-              </li>
-              <li>
-                • Designed database models using Prisma ORM with relational data handling and
-                type-safe queries.
-              </li>
-              <li>
-                • Automated deployment workflows using Docker and GitHub Actions for consistent
-                production builds.
-              </li>
-            </ul>
-
-            {/* TECH */}
+        {/* TECH */}
             <div className="flex flex-wrap gap-2 mb-10">
               {[
                 'Next.js 14',
@@ -89,6 +63,34 @@ export default function Projects() {
                 Live Demo ↗
               </a>
             </div>
+
+{/* CONTENT */}
+        <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
+          {/* LEFT */}
+          <div className="flex flex-col justify-center">
+            <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
+              Car1Pro is a full-stack e-commerce platform for automotive accessories, supporting
+              product listings, user workflows, and administrative management. The application was
+              designed with production deployment in mind, incorporating containerization, CI/CD
+              automation, and database management.
+            </p>
+
+            <ul className="space-y-2 text-[#e8f0e0]/70 mb-8">
+              <li>
+                • Implemented complete CRUD workflows for automotive accessories, users, orders, and
+                administrative operations.
+              </li>
+              <li>
+                • Designed database models using Prisma ORM with relational data handling and
+                type-safe queries.
+              </li>
+              <li>
+                • Automated deployment workflows using Docker and GitHub Actions for consistent
+                production builds.
+              </li>
+            </ul>
+
+            
           </div>
 
           {/* RIGHT */}
