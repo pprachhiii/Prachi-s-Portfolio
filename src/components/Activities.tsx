@@ -76,7 +76,17 @@ export default function ActivitiesSection() {
     <section id="activities" className="py-8 bg-[#1f2937] text-white">
       {/* HEADER */}{' '}
       <div className="px-8 md:px-24 mb-16">
-        <h2 className="text-5xl md:text-7xl font-black mt-3">Activities</h2>
+        <h2           className="
+      rotate-180
+      [writing-mode:vertical-rl]
+
+      text-yellow-400
+      leading-[0.85]
+      whitespace-pre-line"
+          style={{
+            fontFamily: 'var(--serif-display)',
+            fontSize: 'clamp(2rem,5vw,4rem)',
+          }}>Activities</h2>
       </div>
       {/* GRID */}
       <div className="px-8 md:px-24">
