@@ -246,18 +246,22 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div
+                        <div
               className="
                 border-t
                 border-white/10
                 pt-5
-              ></div>
+              "
+            ></div>
           </div>
-        </div>
-      </div>
-    </section>
+        </div>   {/* closes space-y-10 */}
+
+      </div>     {/* closes hidden lg:block lg:pt-6 */}
+
+    </div>       {/* closes grid */}
+
+  </section>
   );
 };
 
 export default AboutSection;
-                
