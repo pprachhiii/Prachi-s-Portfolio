@@ -12,8 +12,8 @@ const HeroSection = () => {
           <span className="bg-yellow-400 bg-clip-text text-transparent">Hello!</span>
           <br />
           I'm <span className="bg-yellow-400 bg-clip-text text-transparent">Prachi Yadav</span>
-          ,<br />a{' '}
-          <span className="bg-yellow-400 bg-clip-text text-transparent">Software Developer.</span>
+        
+         
         </h1>
 
         <p className="text-xl md:text-xl font-normal  text-blue-200 ">
