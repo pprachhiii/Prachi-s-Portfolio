@@ -41,12 +41,13 @@ const AboutSection = () => {
       [writing-mode:vertical-rl]
 
       text-yellow-400
-
-      text-[5rem]
       leading-[0.85]
-      font-medium
       whitespace-pre-line
     "
+          style={{
+            fontFamily: 'var(--serif-display)',
+            fontSize: 'clamp(2rem,5vw,4rem)',
+          }}
           >
             {`ABOUT ME`}
           </h2>
