@@ -12,8 +12,17 @@ export default function ExperienceSection() {
       {/* Header */}
 
       <div className="flex items-end gap-8 mb-20">
-        <h2
-          className="font-black leading-none"
+        
+          
+
+<h2
+          className="
+      rotate-180
+      [writing-mode:vertical-rl]
+
+      text-yellow-400
+      leading-[0.85]
+      whitespace-pre-line"
           style={{
             fontFamily: 'var(--serif-display)',
             fontSize: 'clamp(2rem,5vw,4rem)',
