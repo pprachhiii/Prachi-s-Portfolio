@@ -6,9 +6,7 @@ export default function Projects() {
       {/* HEADER */}
       <div className="px-6 md:px-24 pb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <h2           className="
-      rotate-180
-      [writing-mode:vertical-rl]
-
+      
       text-yellow-400
       leading-[0.85]
       whitespace-pre-line"
