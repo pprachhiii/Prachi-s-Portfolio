@@ -37,6 +37,14 @@ export function initializeConstellation({ canvas, label, hint }: ConstellationOp
       skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
     },
     {
+      id: 'languages',
+      label: 'Languages',
+      col: '#facc15',
+      x: 0.5,
+      y: 0.75,
+      skills: ['JavaScript', 'TypeScript', 'Java'],
+    },
+{
       id: 'devops',
       label: 'DevOps',
       col: '#facc15',
@@ -52,22 +60,8 @@ export function initializeConstellation({ canvas, label, hint }: ConstellationOp
       y: 0.84,
       skills: ['Git', 'Postman', 'GitHub', 'APIDog', 'VS Code'],
     },
-    {
-      id: 'languages',
-      label: 'Languages',
-      col: '#facc15',
-      x: 0.5,
-      y: 0.75,
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java'],
-    },
-    {
-      id: 'professional',
-      label: 'Professional',
-      col: '#facc15',
-      x: 0.22,
-      y: 0.84,
-      skills: ['Problem Solving', 'Collaboration', 'Attention to Detail', 'Adaptability'],
-    },
+    
+    
   ];
 
   let animationFrame = 0;
