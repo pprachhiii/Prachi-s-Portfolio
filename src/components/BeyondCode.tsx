@@ -6,7 +6,17 @@ const BeyondCode = () => {
       <div className="max-w-6xl mx-auto">
         {/* HEADER */}
         <div className="text-center mb-20">
-          <h2 className="mt-4 text-4xl md:text-5xl font-black">Who am I when I’m not on laptop</h2>
+          <h2           className="
+      rotate-180
+      [writing-mode:vertical-rl]
+
+      text-yellow-400
+      leading-[0.85]
+      whitespace-pre-line"
+          style={{
+            fontFamily: 'var(--serif-display)',
+            fontSize: 'clamp(2rem,5vw,4rem)',
+          }}>Who am I when I’m not on laptop</h2>
 
           <p className="max-w-3xl mx-auto mt-8 text-blue-200 leading-8">
             I'm probably dancing, painting, trying a new recipe, getting my hands dirty with
