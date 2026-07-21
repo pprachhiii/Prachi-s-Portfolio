@@ -91,27 +91,6 @@ export default function ExperienceSection() {
             </span>
           </div>
 
-          <p
-            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
-            style={{
-              fontFamily: 'var(--sans)',
-              color: 'var(--ink)',
-            }}
-          >
-            Architected and deployed scalable full-stack features using Next.js, Server Actions, and
-            Express.js REST APIs. Worked across backend logic, API design, and frontend integration
-            to deliver production-ready features. Improved backend performance and system
-            reliability through structured optimization practices.
-          </p>
-
-          <div className="mt-4">
-            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
-              <li>• Optimized backend caching and rate-limiting using Upstash</li>
-              <li>• Validated APIs using Postman for production-grade reliability</li>
-              <li>• Collaborated on full-stack feature delivery from API to UI integration</li>
-            </ul>
-          </div>
-
           <div className="mt-5 flex flex-wrap gap-2">
             {[
               'Next.js 13+',
@@ -138,6 +117,28 @@ export default function ExperienceSection() {
               </span>
             ))}
           </div>
+<p
+            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
+            style={{
+              fontFamily: 'var(--sans)',
+              color: 'var(--ink)',
+            }}
+          >
+            Architected and deployed scalable full-stack features using Next.js, Server Actions, and
+            Express.js REST APIs. Worked across backend logic, API design, and frontend integration
+            to deliver production-ready features. Improved backend performance and system
+            reliability through structured optimization practices.
+          </p>
+
+          <div className="mt-4">
+            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
+              <li>• Optimized backend caching and rate-limiting using Upstash</li>
+              <li>• Validated APIs using Postman for production-grade reliability</li>
+              <li>• Collaborated on full-stack feature delivery from API to UI integration</li>
+            </ul>
+          </div>
+
+          
         </div>
 
         {/* ========================================= */}
@@ -200,7 +201,25 @@ export default function ExperienceSection() {
             </span>
           </div>
 
-          <p
+          <div className="mt-5 flex flex-wrap gap-2">
+            {['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'Razorpay', 'SMTP'].map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full px-3 py-1"
+                style={{
+                  fontSize: '0.72rem',
+                  border: '1px solid rgba(0,0,0,0.08)',
+                  background: 'rgba(255,255,255,0.45)',
+                  backdropFilter: 'blur(6px)',
+                  opacity: 0.8,
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+<p
             className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
             style={{
               fontFamily: 'var(--sans)',
@@ -220,23 +239,7 @@ export default function ExperienceSection() {
             </ul>
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-2">
-            {['Node.js', 'Express.js', 'MySQL', 'JWT', 'RBAC', 'Razorpay', 'SMTP'].map((tech) => (
-              <span
-                key={tech}
-                className="rounded-full px-3 py-1"
-                style={{
-                  fontSize: '0.72rem',
-                  border: '1px solid rgba(0,0,0,0.08)',
-                  background: 'rgba(255,255,255,0.45)',
-                  backdropFilter: 'blur(6px)',
-                  opacity: 0.8,
-                }}
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+          
         </div>
       </div>
     </section>
