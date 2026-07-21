@@ -17,9 +17,7 @@ export default function ExperienceSection() {
 
 <h2
           className="
-      rotate-180
-      [writing-mode:vertical-rl]
-
+     
       text-yellow-400
       leading-[0.85]
       whitespace-pre-line"
