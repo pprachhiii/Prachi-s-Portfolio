@@ -7,7 +7,7 @@ const activities = [
     org: 'HackWavl Hackathon',
     date: 'Feb 2026',
     type: 'certificate',
-    description:'Participated in the 8-hour HackWavl Hackathon under SMSOTSAV at SMS Lucknow and secured 2nd Runner-Up position. Led a 4-member team to build a campus energy monitoring and optimization system focused on real-time tracking and efficiency improvement.',
+    description:'Secured 2nd Runner-Up in my first inter-college hackathon, HackWavl (SMSOTSAV), competing against 20+ teams. Led a 4-member team to build a campus energy monitoring and optimization system focused on real-time energy tracking and efficiency improvement during the 8-hour hackathon.',
     link: 'https://drive.google.com/file/d/15Wu4J7wxHA40EdOKDh9KWhUELbfoQKJS/view?usp=sharing',
   },
   
@@ -33,7 +33,7 @@ const activities = [
     date: 'Jul 2025 – Aug 2025',
     type: 'certificate',
   description:
-    'Completed a 4-week ML cohort by Girls Leading Tech focused on machine learning, AI development, mentorship sessions, weekly assignments, and hands-on projects.',
+    'Completed a 4-week Machine Learning Cohort by Girls Leading Tech, focused on machine learning, AI development, mentorship sessions, weekly assignments, and hands-on projects. Independently participated in the final-week online hackathon.',
     link: 'https://drive.google.com/file/d/1wDMX8CtoFmpj-BIQmTS6fcK6RylyB7LD/view?usp=sharing',
   },
   {
