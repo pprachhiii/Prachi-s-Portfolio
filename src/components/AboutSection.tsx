@@ -25,46 +25,91 @@ const AboutSection = () => {
           items-start
         "
       >
-        {/* COLUMN 1 - VERTICAL TITLE */}
+        {/* COLUMN 1 - VERTICAL TITLE (Desktop Only) */}
         <div
           className="
-    hidden
-    lg:flex
-    justify-center
-    items-start
-    overflow-visible
-  "
+            hidden
+            lg:flex
+            justify-center
+            items-start
+            overflow-visible
+          "
         >
           <h2
             className="
-      rotate-180
-      [writing-mode:vertical-rl]
-
-      text-yellow-400
-      leading-[0.85]
-      whitespace-pre-line
-    "
-          style={{
-            fontFamily: 'var(--serif-display)',
-            fontSize: 'clamp(2rem,5vw,4rem)',
-          }}
+              rotate-180
+              [writing-mode:vertical-rl]
+              text-yellow-400
+              leading-[0.85]
+              whitespace-pre-line
+            "
+            style={{
+              fontFamily: 'var(--serif-display)',
+              fontSize: 'clamp(2rem,5vw,4rem)',
+            }}
           >
-            {`ABOUT ME`}
+            ABOUT ME
           </h2>
         </div>
 
         {/* COLUMN 2 - CONTENT */}
-<div>
+        <div>
+          {/* Mobile Heading */}
           <h2
-  className="lg:hidden text-center text-yellow-400 tracking-[0.2em] mb-6"
-  style={{
-    fontFamily: 'var(--serif-display)',
-    fontSize: 'clamp(2rem,5vw,4rem)',
-  }}
->
-  ABOUT ME
-</h2>
+            className="lg:hidden text-center text-yellow-400 tracking-[0.2em] mb-6"
+            style={{
+              fontFamily: 'var(--serif-display)',
+              fontSize: 'clamp(2rem,5vw,4rem)',
+            }}
+          >
+            ABOUT ME
+          </h2>
 
+          {/* MOBILE STATS */}
+          <div className="lg:hidden space-y-10 mb-10">
+            <div>
+              <div
+                className="text-5xl font-bold text-white leading-none"
+                style={{ fontFamily: 'var(--serif-display)' }}
+              >
+                2
+              </div>
+
+              <div className="mt-2 text-[0.72rem] tracking-[0.18em] text-blue-300">
+                PRODUCTION INTERNSHIPS
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-5">
+              <div
+                className="text-5xl font-bold text-white leading-none"
+                style={{ fontFamily: 'var(--serif-display)' }}
+              >
+                3+
+              </div>
+
+              <div className="mt-2 text-[0.72rem] tracking-[0.18em] text-blue-300">
+                SHIPPED PROJECTS
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-5">
+              <div
+                className="text-3xl font-bold text-white leading-none"
+                style={{ fontFamily: 'var(--serif-display)' }}
+              >
+                PERN & MERN
+              </div>
+
+              <div className="mt-2 text-[0.72rem] tracking-[0.18em] text-blue-300">
+                CORE STACK
+              </div>
+            </div>
+
+            <div className="border-t border-white/10 pt-5"></div>
+          </div>
+
+          {/* ORIGINAL PARAGRAPHS */}
           <div className="space-y-7 max-w-3xl">
             <p
               className="
@@ -105,14 +150,10 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* COLUMN 3 - STATS */}
-<div className="order-2 lg:order-3 lg:pt-6">
+        {/* COLUMN 3 - STATS (Desktop Only) */}
+        <div className="hidden lg:block lg:pt-6">
           <div className="space-y-10">
-            <div
-              className="
-                pt-0
-              "
-            >
+            <div className="pt-0">
               <div
                 className="
                   text-5xl
@@ -204,13 +245,13 @@ const AboutSection = () => {
                 CORE STACK
               </div>
             </div>
+
             <div
               className="
                 border-t
                 border-white/10
                 pt-5
-              "
-            ></div>
+              ></div>
           </div>
         </div>
       </div>
@@ -219,3 +260,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+                
