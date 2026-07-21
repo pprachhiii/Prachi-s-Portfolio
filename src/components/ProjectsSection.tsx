@@ -5,7 +5,17 @@ export default function Projects() {
     <section className="py-12 overflow-hidden">
       {/* HEADER */}
       <div className="px-6 md:px-24 pb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <h2 className="text-5xl md:text-7xl font-black leading-none">Projects</h2>
+        <h2           className="
+      rotate-180
+      [writing-mode:vertical-rl]
+
+      text-yellow-400
+      leading-[0.85]
+      whitespace-pre-line"
+          style={{
+            fontFamily: 'var(--serif-display)',
+            fontSize: 'clamp(2rem,5vw,4rem)',
+          }}>Projects</h2>
       </div>
       {/* ================================================= */}
 {/* PROJECT 1 : CAR1PRO */}
