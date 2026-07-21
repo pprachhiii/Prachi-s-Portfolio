@@ -103,7 +103,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/prachi-yadav-87303231a"
+                  href="https://www.linkedin.com/in/prachi-yadav-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 hover:text-yellow-300 transition-colors duration-300 group"
