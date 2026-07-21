@@ -62,14 +62,12 @@ const activities = [
     'Qualified for SIH Internal Round with a 4-member team by proposing SynCode AI, an AI-powered medical coding and healthcare audit platform. Contributed to UI design, frontend, database, and authentication development.'
   },
  {
-    title: 'AWS Club Activity',
-    org: 'AWS Student Club',
-    date: 'Nov 2023',
-    type: 'certificate',
-    description:
-      'Participated in AWS cloud sessions and workshops covering cloud fundamentals, deployment concepts, and architecture basics.',
-    link: 'https://drive.google.com/file/d/1neoa7rlXGOnIDJssXwjPGnMl8Rr36S-l/view?usp=sharing',
-  },
+  title: 'SIH Internal Round Qualifier',
+  org: 'Smart India Hackathon (SIH)',
+  date: '2026',
+  type: 'certificate',
+  description: 'Qualified for the Smart India Hackathon (SIH) Internal Round, with our team selected among the top 20 out of 60+ participating teams. Built an AI-powered document verification application to determine the authenticity and legal validity of documents.',
+},
   
 ];
 
