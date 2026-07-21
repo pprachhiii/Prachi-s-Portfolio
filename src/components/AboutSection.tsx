@@ -54,7 +54,7 @@ const AboutSection = () => {
         </div>
 
         {/* COLUMN 2 - CONTENT */}
-        <div>
+<div className="order-3 lg:order-2">
           <h2 className="lg:hidden text-[5rem] text-center font-semibold text-yellow-400 tracking-[0.2em] mb-6">
   ABOUT ME
 </h2>
@@ -100,7 +100,7 @@ const AboutSection = () => {
         </div>
 
         {/* COLUMN 3 - STATS */}
-        <div className="lg:pt-6">
+<div className="order-2 lg:order-3 lg:pt-6">
           <div className="space-y-10">
             <div
               className="
