@@ -127,7 +127,7 @@ const NavbarSection = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/prachi-yadav-87303231a/"
+              href="https://www.linkedin.com/in/prachi-yadav-dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="
