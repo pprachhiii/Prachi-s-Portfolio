@@ -117,7 +117,7 @@ const AboutSection = () => {
                   fontFamily: 'var(--serif-display)',
                 }}
               >
-                2+
+                2
               </div>
 
               <div
