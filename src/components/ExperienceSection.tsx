@@ -124,27 +124,35 @@ export default function ExperienceSection() {
               </span>
             ))}
           </div>
-<p
-            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
-            style={{
-              fontFamily: 'var(--sans)',
-              color: 'var(--ink)',
-            }}
-          >
-            Architected and deployed scalable full-stack features using Next.js, Server Actions, and
-            Express.js REST APIs. Worked across backend logic, API design, and frontend integration
-            to deliver production-ready features. Improved backend performance and system
-            reliability through structured optimization practices.
-          </p>
+<div className="mt-4">
+  <ul
+    className="pl-5 opacity-75 text-[0.9rem] leading-[1.8] space-y-2"
+    style={{
+      fontFamily: 'var(--sans)',
+      color: 'var(--ink)',
+    }}
+  >
+    <li>
+      • Built responsive <strong>Next.js</strong> interfaces using <strong>TypeScript</strong> and
+      <strong> Tailwind CSS</strong>, integrating <strong>REST APIs</strong> across production features.
+    </li>
 
-          <div className="mt-4">
-            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
-              <li>• Optimized backend caching and rate-limiting using Upstash</li>
-              <li>• Validated APIs using Postman for production-grade reliability</li>
-              <li>• Collaborated on full-stack feature delivery from API to UI integration</li>
-            </ul>
-          </div>
+    <li>
+      • Improved backend performance with <strong>Upstash Redis</strong> caching and implemented
+      <strong> rate limiting (5 requests/minute)</strong> on authentication APIs.
+    </li>
 
+    <li>
+      • Collaborated across <strong>frontend, backend, and API integration</strong> to deliver
+      production-ready features using modern full-stack workflows.
+    </li>
+
+    <li>
+      • Validated and tested APIs using <strong>Postman</strong>, improving API reliability and
+      development efficiency.
+    </li>
+  </ul>
+</div>
           
         </div>
 
@@ -226,25 +234,31 @@ export default function ExperienceSection() {
             ))}
           </div>
 
-<p
-            className="mb-6 opacity-75 text-[0.95rem] leading-[1.8]"
-            style={{
-              fontFamily: 'var(--sans)',
-              color: 'var(--ink)',
-            }}
-          >
-            Built modular backend services using Node.js and Express.js with a focus on scalability,
-            security, and maintainability. Designed authentication flows, payment integrations, and
-            optimized database operations for efficient transactional workflows.
-          </p>
+<div className="mt-4">
+  <ul
+    className="pl-5 opacity-75 text-[0.9rem] leading-[1.8] space-y-2"
+    style={{
+      fontFamily: 'var(--sans)',
+      color: 'var(--ink)',
+    }}
+  >
+    <li>
+      • Built backend <strong>REST APIs</strong> using <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MySQL</strong> for production applications.
+    </li>
 
-          <div className="mt-4">
-            <ul className="pl-5 opacity-75 text-[0.88rem] leading-[1.7]">
-              <li>• Implemented JWT-based authentication with RBAC authorization</li>
-              <li>• Integrated Razorpay for secure payment processing workflows</li>
-              <li>• Optimized MySQL queries for improved backend performance</li>
-            </ul>
-          </div>
+    <li>
+      • Implemented secure <strong>JWT authentication</strong> and <strong>Role-Based Access Control (RBAC)</strong> for <strong>2 user roles</strong>.
+    </li>
+
+    <li>
+      • Integrated <strong>Razorpay</strong> payment gateway and <strong>SMTP</strong> email services for transactional workflows.
+    </li>
+
+    <li>
+      • Optimized <strong>MySQL</strong> queries across <strong>4+ API endpoints</strong>, improving backend performance and database efficiency.
+    </li>
+  </ul>
+</div>
 
           
         </div>
