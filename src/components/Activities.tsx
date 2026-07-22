@@ -75,17 +75,23 @@ export default function ActivitiesSection() {
   return (
     <section id="activities" className="py-8 bg-[#1f2937] text-white">
       {/* HEADER */}{' '}
-      <div className="px-8 md:px-24 mb-16">
-        <h2           className="
-
+      <div className="px-8 md:px-24 mb-16 flex justify-center md:justify-start">
+  <h2
+    className="
+      text-center
+      md:text-left
       text-yellow-400
       leading-[0.85]
-      whitespace-pre-line"
-          style={{
-            fontFamily: 'var(--serif-display)',
-            fontSize: 'clamp(2rem,5vw,4rem)',
-          }}>Activities</h2>
-      </div>
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    Activities
+  </h2>
+</div>
       {/* GRID */}
       <div className="px-8 md:px-24">
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
