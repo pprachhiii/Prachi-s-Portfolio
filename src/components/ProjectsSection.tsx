@@ -4,17 +4,25 @@ export default function Projects() {
   return (
     <section className="py-12 overflow-hidden">
       {/* HEADER */}
-      <div className="px-6 md:px-24 pb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-        <h2           className="
-      
+     <div className="px-6 md:px-24 pb-16 flex justify-center md:justify-between md:items-end">
+  <h2
+    className="
+      text-center
+      md:text-left
+      uppercase
+      tracking-[0.2em]
       text-yellow-400
       leading-[0.85]
-      whitespace-pre-line"
-          style={{
-            fontFamily: 'var(--serif-display)',
-            fontSize: 'clamp(2rem,5vw,4rem)',
-          }}>Projects</h2>
-      </div>
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    PROJECTS
+  </h2>
+</div>
       {/* ================================================= */}
 {/* PROJECT 1 : CAR1PRO */}
 {/* ================================================= */}
