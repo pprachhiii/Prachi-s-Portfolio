@@ -6,16 +6,23 @@ const BeyondCode = () => {
       <div className="max-w-6xl mx-auto">
         {/* HEADER */}
         <div className="text-center mb-20">
-          <h2           className="
-
+  <h2
+    className="
+      text-center
+      md:text-left
+      uppercase
+      tracking-[0.2em]
       text-yellow-400
       leading-[0.85]
-      whitespace-pre-line"
-          style={{
-            fontFamily: 'var(--serif-display)',
-            fontSize: 'clamp(2rem,5vw,4rem)',
-          }}>Who am I when I’m not on laptop</h2>
-
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    WHO AM I WHEN I'M NOT ON MY LAPTOP?
+  </h2>
           <p className="max-w-3xl mx-auto mt-8 text-blue-200 leading-8">
             I'm probably dancing, painting, trying a new recipe, getting my hands dirty with
             pottery, or lost in a playlist that changes every week, or dreaming about landing that
