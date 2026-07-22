@@ -80,6 +80,8 @@ export default function ActivitiesSection() {
     className="
       text-center
       md:text-left
+      uppercase
+      tracking-[0.2em]
       text-yellow-400
       leading-[0.85]
       whitespace-pre-line
@@ -89,7 +91,7 @@ export default function ActivitiesSection() {
       fontSize: 'clamp(2rem,5vw,4rem)',
     }}
   >
-    Activities
+    ACTIVITIES
   </h2>
 </div>
       {/* GRID */}
