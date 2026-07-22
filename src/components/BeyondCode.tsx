@@ -9,7 +9,6 @@ const BeyondCode = () => {
   <h2
     className="
       text-center
-      md:text-left
       uppercase
       tracking-[0.2em]
       text-yellow-400
