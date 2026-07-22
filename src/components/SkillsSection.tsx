@@ -45,19 +45,25 @@ const SkillsSection = () => {
 
   return (
     <section id="skills" ref={sectionRef} className={isVisible ? 'visible' : ''}>
-      <div className="skills-header reveal">
-  
-  {/* MOBILE */}
-  <h2 className="block lg:hidden text-[3rem] text-center font-semibold text-white tracking-[0.2em] mb-6">
-    Tools & <br />
-    <em>Technologies</em>
+     <div className="skills-header reveal flex justify-center lg:justify-start">
+  <h2
+    className="
+      text-center
+      lg:text-left
+      uppercase
+      tracking-[0.2em]
+      text-white
+      leading-[0.85]
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    TOOLS & <br className="lg:hidden" />
+    TECHNOLOGIES
   </h2>
-
-  {/* LAPTOP */}
-  <h2 className="hidden lg:block text-[4rem] text-left font-semibold text-white tracking-[0.2em] mb-6">
-    Tools & <em>Technologies</em>
-  </h2>
-
 </div>
 
       <div className="skills-canvas">
