@@ -52,8 +52,6 @@ const AboutSection = () => {
           </h2>
         </div>
 
-        {/* COLUMN 2 - CONTENT */}
-        <div>
           {/* Mobile Heading */}
           <h2
             className="lg:hidden text-center text-yellow-400 tracking-[0.2em] mb-6"
@@ -109,6 +107,8 @@ const AboutSection = () => {
             <div className="border-t border-white/10 pt-5"></div>
           </div>
 
+        {/* COLUMN 2 - CONTENT */}
+        <div>
           {/* ORIGINAL PARAGRAPHS */}
           <div className="space-y-7 max-w-3xl">
             <p
@@ -258,7 +258,6 @@ const AboutSection = () => {
 
       </div>     {/* closes hidden lg:block lg:pt-6 */}
 
-    </div>       {/* closes grid */}
 
   </section>
   );
