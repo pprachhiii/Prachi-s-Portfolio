@@ -52,7 +52,7 @@ const SkillsSection = () => {
       lg:text-left
       uppercase
       tracking-[0.2em]
-      text-white
+      text-yellow-400
       leading-[0.85]
       whitespace-pre-line
     "
