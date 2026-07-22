@@ -48,14 +48,29 @@ const ContactSection = () => {
 
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-black mt-3">Let's Connect</h2>
-          <p className="text-lg text-blue-200 max-w-2xl mx-auto font-serif">
-            Got a project, an idea, or a challenge? Let’s talk.
-          </p>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto mt-6" />
-        </div>
+      <div className="text-center mb-16">
+  <h2
+    className="
+      uppercase
+      tracking-[0.2em]
+      text-white
+      leading-[0.85]
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    LET'S CONNECT
+  </h2>
 
+  <p className="mt-5 text-lg text-blue-200 max-w-2xl mx-auto font-serif">
+    Got a project, an idea, or a challenge? Let's talk.
+  </p>
+
+  <div className="w-24 h-1 bg-yellow-400 mx-auto mt-6" />
+</div>
         {/* Contact grid */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left: Contact Info */}
