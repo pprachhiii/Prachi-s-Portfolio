@@ -10,25 +10,25 @@ export default function ExperienceSection() {
       }}
     >
       {/* Header */}
-
-      <div className="flex items-end gap-8 mb-20">
-        
-          
-
-<h2
-          className="
-     
+<div className="flex justify-center md:justify-start mb-20">
+  <h2
+    className="
+      text-center
+      md:text-left
+      uppercase
+      tracking-[0.2em]
       text-yellow-400
       leading-[0.85]
-      whitespace-pre-line"
-          style={{
-            fontFamily: 'var(--serif-display)',
-            fontSize: 'clamp(2rem,5vw,4rem)',
-          }}
-        >
-          Work <em style={{ color: 'var(--rust)' }}>Experience</em>
-        </h2>
-      </div>
+      whitespace-pre-line
+    "
+    style={{
+      fontFamily: 'var(--serif-display)',
+      fontSize: 'clamp(2rem,5vw,4rem)',
+    }}
+  >
+    WORK EXPERIENCE
+  </h2>
+</div>
 
       {/* Timeline */}
 
