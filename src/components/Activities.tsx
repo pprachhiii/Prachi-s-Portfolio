@@ -53,14 +53,6 @@ const activities = [
   description:
     'Participated in DevFest 2025 by GDG Lucknow, attending workshops on cloud computing, Kubernetes, UI/UX, and product development while networking with industry mentors and developers.'
 },
-  {
-    title: 'SIH Internal Round Qualifier',
-    org: 'Smart India Hackathon',
-    date: 'Aug 2025',
-    type: 'project',
-    description:
-    'Qualified for SIH Internal Round with a 4-member team by proposing SynCode AI, an AI-powered medical coding and healthcare audit platform. Contributed to UI design, frontend, database, and authentication development.'
-  },
  {
   title: 'SIH Internal Round Qualifier',
   org: 'Smart India Hackathon (SIH)',
