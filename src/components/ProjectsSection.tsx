@@ -340,25 +340,24 @@ export default function Projects() {
           />
         </div>
 
-        {/* Description */}
-        <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-          Item Manager is a full-stack inventory management application that simplifies product tracking through reusable components, API-driven data management, and a clean, maintainable architecture.
-        </p>
-
         {/* Features */}
-        <ul className="space-y-3 text-[#e8f0e0]/70">
-          <li>
-            • Built complete <strong>CRUD workflows</strong> for inventory management using React, Node.js, Express.js, and MongoDB.
-          </li>
+<ul className="space-y-3 text-[#e8f0e0]/70">
+  <li>
+    • Built a <strong>full-stack inventory management application</strong> using <strong>React, Node.js, Express.js, and MongoDB</strong>.
+  </li>
 
-          <li>
-            • Developed <strong>REST APIs</strong> and integrated frontend-backend data synchronization for consistent application state.
-          </li>
+  <li>
+    • Implemented complete <strong>CRUD operations</strong> with <strong>REST APIs</strong> for efficient inventory and product management.
+  </li>
 
-          <li>
-            • Designed a <strong>modular component architecture</strong> with reusable UI components for easier scalability and maintenance.
-          </li>
-        </ul>
+  <li>
+    • Integrated frontend and backend through <strong>API-driven data synchronization</strong>, ensuring consistent application state.
+  </li>
+
+  <li>
+    • Designed a <strong>modular component architecture</strong> with reusable UI components for improved scalability and maintainability.
+  </li>
+</ul>
 
       </div>
 
@@ -454,26 +453,20 @@ export default function Projects() {
           />
         </div>
 
-        {/* Description */}
-        <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-          The 2070 Dashboard is an environmental analytics platform that transforms wildlife and ecological data into interactive maps, charts, and visual insights through a responsive dashboard experience.
-        </p>
-
         {/* Features */}
-        <ul className="space-y-3 text-[#e8f0e0]/70">
-          <li>
-            • Built interactive <strong>maps, heatmaps, and geospatial visualizations</strong> using Leaflet for environmental monitoring.
-          </li>
+<ul className="space-y-3 text-[#e8f0e0]/70">
+  <li>
+    • Built an <strong>interactive environmental analytics dashboard</strong> using <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>.
+  </li>
 
-          <li>
-            • Developed reusable <strong>dashboard and chart components</strong> with React, Recharts, and TypeScript to visualize complex datasets.
-          </li>
+  <li>
+    • Developed <strong>interactive maps, heatmaps, and geospatial visualizations</strong> with <strong>Leaflet</strong> and reusable chart components using <strong>Recharts</strong>.
+  </li>
 
-          <li>
-            • Designed a responsive interface with <strong>Tailwind CSS</strong> and dynamic state management for smooth, data-driven user interactions.
-          </li>
-        </ul>
-
+  <li>
+    • Designed a <strong>responsive dashboard</strong> with reusable UI components and efficient state management for smooth, data-driven user interactions.
+  </li>
+</ul>
       </div>
 
       {/* Desktop Image */}
@@ -554,26 +547,19 @@ export default function Projects() {
   <div className="grid md:grid-cols-[60%_40%] gap-10 md:gap-2 px-8 md:px-24">
     {/* LEFT */}
     <div className="order-2 md:order-1 flex flex-col justify-center">
-      <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-        StayEase is a full-stack rental marketplace that enables users to browse,
-        list, and manage properties through secure authentication, advanced search,
-        and media management.
-      </p>
+     <ul className="space-y-3 text-[#e8f0e0]/70">
+  <li>
+    • Built a <strong>full-stack rental marketplace</strong> using <strong>React, Node.js, Express.js, and MongoDB</strong> for property discovery and management.
+  </li>
 
-      <ul className="space-y-3 text-[#e8f0e0]/70">
-        <li>
-          • Built property listing, booking, and CRUD workflows with a responsive
-          React interface.
-        </li>
-        <li>
-          • Developed REST APIs, authentication, and MongoDB-backed data
-          management using Node.js and Express.
-        </li>
-        <li>
-          • Implemented property search, filtering, and image uploads for a
-          seamless rental experience.
-        </li>
-      </ul>
+  <li>
+    • Developed <strong>REST APIs</strong>, secure authentication, and complete <strong>CRUD workflows</strong> for property listings, bookings, and user accounts.
+  </li>
+
+  <li>
+    • Implemented <strong>property search, filtering, image uploads</strong>, and a responsive interface to deliver a seamless rental experience.
+  </li>
+</ul>
     </div>
 
     {/* RIGHT */}
