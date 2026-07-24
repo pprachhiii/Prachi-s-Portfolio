@@ -103,32 +103,34 @@ export default function Projects() {
           />
         </div>
 
-        {/* Description */}
-        <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-          Car1Pro is a full-stack automotive marketplace designed for product discovery,
-          secure shopping, and administrative management, with a production-ready
-          architecture focused on scalability and deployment.
-        </p>
+       
+       {/* Features */}
+<ul className="space-y-3 text-[#e8f0e0]/70">
+  <li>
+    • Built a <strong>full-stack automotive marketplace</strong> using
+    <strong> Next.js</strong>, <strong>TypeScript</strong>,
+    <strong> Prisma ORM</strong>, and <strong>PostgreSQL</strong>,
+    delivering <strong>12+ responsive pages</strong>.
+  </li>
 
-        {/* Features */}
-        <ul className="space-y-3 text-[#e8f0e0]/70">
-          <li>
-            • Built a full-stack marketplace with <strong>12+ responsive pages</strong>
-            using Next.js, React, TypeScript, and Tailwind CSS.
-          </li>
+  <li>
+    • Developed <strong>15+ REST APIs</strong> and
+    <strong> 8 relational database models</strong>, implementing secure
+    authentication, product management, carts, orders, and CRUD operations.
+  </li>
 
-          <li>
-            • Developed <strong>15+ REST APIs</strong> and
-            <strong> 8 relational database models</strong> supporting products,
-            carts, orders, and authentication.
-          </li>
+  <li>
+    • Built reusable UI components with <strong>Radix UI</strong> and
+    <strong> React Hook Form</strong>, creating responsive, accessible, and
+    type-safe user experiences.
+  </li>
 
-          <li>
-            • Automated deployment with <strong>Docker</strong>,
-            <strong> GitHub Actions</strong>, and <strong>Vercel</strong>, while
-            building reusable UI components with Radix UI and React Hook Form.
-          </li>
-        </ul>
+  <li>
+    • Automated deployment using <strong>Docker</strong>,
+    <strong> GitHub Actions</strong>, and <strong>Vercel</strong>, enabling
+    CI/CD and production-ready releases.
+  </li>
+</ul>
 
       </div>
 
@@ -223,25 +225,23 @@ export default function Projects() {
           />
         </div>
 
-        {/* Description */}
-        <p className="text-[#e8f0e0]/70 leading-8 max-w-2xl mb-8">
-          DHARA is a full-stack civic engagement platform that enables citizens to report infrastructure issues, track progress, and participate in community-driven initiatives through structured workflows and a responsive user experience.
-        </p>
-
-        {/* Features */}
         <ul className="space-y-3 text-[#e8f0e0]/70">
-          <li>
-            • Built a full-stack platform with <strong>7+ responsive workflows</strong> for issue reporting, tracking, voting, and volunteer participation.
-          </li>
+  <li>
+    • Built a <strong>full-stack civic engagement platform</strong> using <strong>Next.js, TypeScript, Prisma ORM,</strong> and <strong>PostgreSQL</strong>, delivering <strong>7+ responsive workflows</strong>.
+  </li>
 
-          <li>
-            • Engineered <strong>20+ relational data models</strong> and <strong>30+ REST APIs</strong> using Prisma and PostgreSQL to support scalable civic workflows.
-          </li>
+  <li>
+    • Developed <strong>30+ REST APIs</strong> and <strong>20+ relational database models</strong> supporting authentication, issue reporting, tracking, and user management.
+  </li>
 
-          <li>
-            • Integrated <strong>Zustand</strong>, <strong>React Hook Form</strong>, and <strong>ImageKit</strong> to deliver predictable state management, validated forms, and seamless media uploads.
-          </li>
-        </ul>
+  <li>
+    • Implemented <strong>Zustand</strong> for state management and <strong>React Hook Form</strong> for validated, reusable form workflows.
+  </li>
+
+  <li>
+    • Integrated <strong>ImageKit</strong> for media uploads and built responsive, reusable UI components with <strong>Tailwind CSS</strong>.
+  </li>
+</ul>
 
       </div>
 
